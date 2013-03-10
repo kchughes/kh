@@ -56,6 +56,7 @@ width: 37.5%
 
 /* Content */
 div#content {
+position: relative;
 float:left;
 }
 
