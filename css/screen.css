@@ -2,6 +2,16 @@
 
 /* Base Styles */
 
+/*colors
+
+muted purple: #5B5870 (k in logo)
+muted teal: #525C6A
+muted 
+
+
+
+
+*/
 
 /* Bold on headings, b, and strong 
 h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; } 
@@ -35,11 +45,18 @@ div#header {
 position: relative;
 width: 43.94%;
 float: left;
+
 }
+
+div#header img {
+padding: 0 0 0 30px;
+}
+
 div#header h1 {
 font-size: 300%;
 padding: 0 0 0 20px;
 }
+
 div#header h1 a {
 }
 div#header p.tagline {
@@ -49,9 +66,9 @@ div#header ul.accessibility {
 
 /*Sidebar, about me brief*/
 #sidebar {
-position: relative;
 float: left;
-width: 37.5%
+width: 37.5%;
+padding: 155px 20px 0 20px;
 }
 
 /* Content */
@@ -69,22 +86,39 @@ div#supporting {
 
 /*Navigation*/
 ul#navigation {
-display: block;
 width: ;
-float: left;
-margin: 0 10px;
 }
 
-ul#navigation li {
+ul#navigation li a{
+font-family: Georgia, serif;
+font-weight: 600;
+font-size: 150%;
+color: #fff;
 }
 
 .about, .work, .home, .connect {
-font-size: 24px;
-background-color: green;
 width: ?;
 float: left;
-padding: 10px;
+padding: 145px 70px 15px 20px; 
+border-radius: 10px;
+margin: 0px;
 }
+
+.home {
+background-color: #4F5865;
+}
+.about {
+background-color: #455263;
+}
+
+.work {
+background-color: #6F617B;
+}
+
+.connect {
+background-color: #5B5870;
+}
+
 
 ul#navigation li a {
 
