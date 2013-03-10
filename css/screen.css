@@ -32,6 +32,7 @@ div#page {
 
 /* Header */
 div#header {
+position: relative;
 width: 43.94%;
 float: left;
 }
@@ -53,6 +54,7 @@ width: 37.5%
 
 /* Content */
 div#content {
+float:left;
 }
 
 div#main {
@@ -61,18 +63,10 @@ div#main {
 div#supporting {
 }
 
-/* Footer */
-div#footer {
-}
-div#footer p.credits {
-}
-div#footer ul.validators {
-}
-div#footer ul.validators li {
-}
 
 /*Navigation*/
 ul#navigation {
+display: block;
 width: ;
 float: left;
 margin: 0 10px;
@@ -86,6 +80,7 @@ font-size: 24px;
 background-color: green;
 width: ?;
 float: left;
+padding: 10px;
 }
 
 ul#navigation li a {
@@ -99,6 +94,15 @@ ul#navigation li a:hover,
 ul#navigation li a:focus {
 }
 
+/* Footer */
+div#footer {
+}
+div#footer p.credits {
+}
+div#footer ul.validators {
+}
+div#footer ul.validators li {
+}
 
 /*Content Typography: Headings*/
 div#content h2 {
