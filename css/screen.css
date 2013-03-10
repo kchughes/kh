@@ -37,8 +37,8 @@ width: 43.94%;
 float: left;
 }
 div#header h1 {
-font-size: 200%;
-
+font-size: 300%;
+padding: 0 0 0 20px;
 }
 div#header h1 a {
 }
