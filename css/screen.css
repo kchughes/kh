@@ -2,16 +2,25 @@
 
 /* Base Styles */
 
-/* Bold on headings, b, and strong */
-h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
-/* Italic on i, em, and cite: */
+/* Bold on headings, b, and strong 
+h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; } 
+
+/* Italic on i, em, and cite: 
 i,em,cite { font-style: italic; }
-/* Dotted border and help cursor to abbr and acronym: */
-abbr,acronym { border-bottom: 1px dotted; cursor: help; }
+
+/* Dotted border and help cursor to abbr and acronym: 
+abbr,acronym { border-bottom: 1px dotted; cursor: help; }*/
+
+/*HTML*/
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
 
 /* Body */
 
 body {
+
 }
 
 /* Major Divisions */
