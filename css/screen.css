@@ -100,7 +100,8 @@ color: #fff;
 width: ?;
 float: left;
 padding: 145px 70px 15px 20px; 
-border-radius: 10px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
 margin: 0px;
 }
 
