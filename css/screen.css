@@ -2,25 +2,19 @@
 
 /* Base Styles */
 
-/*colors
-
+/* colors
 muted purple: #5B5870 (k in logo)
 muted teal: #525C6A
 muted 
 
+*/
 
-
+/* ids and classes
+index # : page, banner, header, navigation, content-body, sidebar, content, short-works, connect-short, footer
+index . : home, about, work, connect, blurb, short-works
 
 */
 
-/* Bold on headings, b, and strong 
-h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; } 
-
-/* Italic on i, em, and cite:
-i,em,cite { font-style: italic; }
-
-/* Dotted border and help cursor to abbr and acronym: 
-abbr,acronym { border-bottom: 1px dotted; cursor: help; }*/
 
 /*HTML*/
 html {
@@ -31,7 +25,7 @@ html {
 /* Body */
 
 body {
-
+background: #D0CAB4;
 }
 
 /* Major Divisions */
@@ -67,13 +61,6 @@ font-size: 300%;
 padding: 0 0 0 20px;
 }
 
-div#header h1 a {
-}
-div#header p.tagline {
-}
-div#header ul.accessibility {
-}
-
 /*Sidebar, about me brief*/
 div#sidebar {
 position: relative;   
@@ -87,13 +74,6 @@ div#content {
 position: relative;
 float:left;
 }
-
-div#main {
-}
-
-div#supporting {
-}
-
 
 /*Navigation*/
 ul#navigation {
@@ -129,74 +109,5 @@ background-color: #6F617B;
 
 .connect {
 background-color: #5B5870;
-}
-
-
-ul#navigation li a {
-
-}
-
-ul#navigation li a:visited {
-}
-
-ul#navigation li a:hover,
-ul#navigation li a:focus {
-}
-
-/* Footer */
-div#footer {
-}
-div#footer p.credits {
-}
-div#footer ul.validators {
-}
-div#footer ul.validators li {
-}
-
-/*Content Typography: Headings*/
-div#content h2 {
-}
-div#content h3 {
-}
-div#content h4 {
-}
-div#content h5 {
-}
-div#content h6 {
-}
-
-/*Content Typography: Paragraphs*/
-div#content p {
-}
-
-/*Content Typography: Unordered Lists*/
-div#content ul {
-}
-div#content ul li {
-}
-/*Nested*/
-div#content * li ul {
-}
-div#content * li ul li {
-}
-
-/*Content Typography: Ordered Lists*/
-div#content ol {
-}
-div#content ol li {
-}
-/*Nested*/
-div#content * li ol {
-}
-div#content * li ol li {
-}
-
-/*Content Typography: Links*/
-div#content a {
-}
-div#content a:visited {
-}
-div#content a:hover,
-div#content a:focus {
 }
 
