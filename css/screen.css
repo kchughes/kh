@@ -55,7 +55,7 @@ div#header {
 position: relative;
 width: 43.94%;
 float: left;
-
+background-color: red;
 }
 
 div#header img {
@@ -75,10 +75,11 @@ div#header ul.accessibility {
 }
 
 /*Sidebar, about me brief*/
-#sidebar {
+div#sidebar {
+position: relative;   
 float: left;
 width: 37.5%;
-padding: 155px 20px 0 20px;
+padding: 80px 20px 0 20px;
 }
 
 /* Content */
