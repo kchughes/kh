@@ -67,7 +67,7 @@ position: absolute;
 left: 0px; 
 width: 27.5%;
 margin: 250px 20px 0px 30px;
-padding: 15px 50px 40px;
+padding: 15px 15px 400px 20px;
 background-color: #D0C8B4;
 }
 
@@ -75,12 +75,15 @@ background-color: #D0C8B4;
 div#content {
 position: relative;
 float:left;
+width: 52.5%;
+background-color: red;
+margin: 100px 10px 0px 0px;
 }
 
-div#shortworks {
+div.shortworks {
 float: left;
-width: 62.5%;
 background: #D0C8B4;
+padding: 15px 15px 150px 20px;
 }
 
 /*Navigation*/
