@@ -10,7 +10,7 @@ muted
 */
 
 /* ids and classes
-index # : page, banner, header, navigation, content-body, sidebar, content, short-works, connect-short, footer
+index # : page, banner, header, navigation, content-body, sidebar, content, shortworks, connect-short, footer
 index . : home, about, work, connect, blurb, short-works
 
 */
@@ -49,7 +49,7 @@ div#header {
 position: relative;
 width: 43.94%;
 float: left;
-background-color: #D0CAB4;
+
 }
 
 div#header img {
@@ -63,16 +63,24 @@ padding: 0 0 0 20px;
 
 /*Sidebar, about me brief*/
 div#sidebar {
-position: relative;   
-float: left;
-width: 37.5%;
-padding: 80px 20px 0 20px;
+position: absolute;   
+left: 0px; 
+width: 27.5%;
+margin: 250px 20px 0px 30px;
+padding: 15px 50px 40px;
+background-color: #D0C8B4;
 }
 
 /* Content */
 div#content {
 position: relative;
 float:left;
+}
+
+div#shortworks {
+float: left;
+width: 62.5%;
+background: #D0C8B4;
 }
 
 /*Navigation*/
@@ -88,7 +96,7 @@ color: #fff;
 }
 
 .about, .work, .home, .connect {
-width: ?;
+width: 6%;
 float: left;
 padding: 145px 70px 15px 20px; 
 border-bottom-right-radius: 15px;
