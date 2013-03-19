@@ -126,16 +126,27 @@ div#content {
 position: relative;
 float:left;
 width: 52.5%;
-background-color: red;
+/* background-color: red; */
 margin: 170px 10px 0px 0px;
 }
 
 div.shortworks {
 float: left;
 background: #D0C8B4;
-width: 45%;
+width: 55%;
 padding: 15px 15px 50px 20px;
 margin: 15px;
+margin-bottom: 40px;
+}
+
+div.shortworks h3 {
+border-top: 3px solid green;
+float: left;
+margin-right: 30px;
+}
+
+div.shortworks img {
+border-style: none;
 }
 
 /*Navigation*/
