@@ -101,9 +101,15 @@ border-bottom-left-radius: 15px;
 margin: 0px;
 }
 
+
 .home {
 background-color: #4F5865;
 }
+
+.home:active {
+border-radius: 30px;
+}
+
 .about {
 background-color: #455263;
 }
