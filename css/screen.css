@@ -35,14 +35,6 @@ div#page {
 }
 
 
-/* Banner */
-div#banner {
-position:absolute;
-width: 100%;
-float: left;
-background-color: #4f4b4d;
-}
-
 
 /* Header */
 div#header {
