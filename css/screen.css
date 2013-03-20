@@ -25,12 +25,14 @@ html {
 /* Body */
 
 body {
-background: #D0CAB4;
+background-color: #FCF7E6;
+
 }
 
 /* Major Divisions */
 
 /* Page (Containing Div) */
+
 div#page {
 }
 
@@ -213,6 +215,7 @@ margin: 0px;
 
 .home {
 background-color: #434157;
+border-bottom-left-radius: 15px;
 }
 
 .home:active {
@@ -229,6 +232,6 @@ background-color: #493D55;
 
 .connect {
 background-color: #43405D;
-
+border-bottom-right-radius: 15px;
 }
 
