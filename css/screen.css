@@ -53,6 +53,12 @@ font-size: 300%;
 padding: 0 0 0 20px;
 }
 
+/* Introductory Large Text */
+#lead-line {
+font-size: 70px;
+float: left;
+}
+
 /*Sidebar, about me brief*/
 div#sidebar {
 position: absolute;   
@@ -118,10 +124,23 @@ border-radius: 20px;
 float: left;
 }
 
+.square-3: hover {
+border-radius: 100px;
+}
 
 
 
 /* Content */
+
+div#content-body {
+background-color: grey;
+}
+
+div#big-blurb {
+background: red;
+float: left;
+}
+
 div#content {
 position: relative;
 float:left;
@@ -164,7 +183,7 @@ color: #fff;
 .about, .work, .home, .connect {
 width: 6%;
 float: left;
-padding: 145px 70px 15px 20px; 
+padding: 100px 70px 15px 20px; 
 border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px;
 margin: 0px;
@@ -172,7 +191,7 @@ margin: 0px;
 
 
 .home {
-background-color: #4F5865;
+background-color: #434157;
 }
 
 .home:active {
@@ -180,14 +199,15 @@ border-radius: 30px;
 }
 
 .about {
-background-color: #455263;
+background-color: #3B4652;
 }
 
 .work {
-background-color: #6F617B;
+background-color: #493D55;
 }
 
 .connect {
-background-color: #5B5870;
+background-color: #43405D;
+
 }
 
