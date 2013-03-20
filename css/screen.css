@@ -53,20 +53,22 @@ font-size: 300%;
 padding: 0 0 0 20px;
 }
 
-/* Introductory Large Text */
-#lead-line {
-font-size: 70px;
-float: left;
-}
+
 
 /*Sidebar, about me brief*/
 div#sidebar {
-position: absolute;   
+/* position: absolute;  */ 
 left: 0px; 
 width: 27.5%;
-margin: 350px 20px 0px 30px;
+margin: 200px 20px 0px 30px;
 padding: 15px 15px 400px 20px;
 /*background-color: #D0C8B4;*/
+}
+
+p.blurb {
+font-size: 20px;
+color: #3D3348;
+font-weight: 600;
 }
 
 div#skillshapes {
@@ -133,21 +135,31 @@ border-radius: 100px;
 /* Content */
 
 div#content-body {
-background-color: grey;
+float: left;
+padding-left: 30px;
 }
 
+/* Introductory Large text */
 div#big-blurb {
-background: red;
 float: left;
+padding: 20px 400px 0px 80px;
+}
+
+div#big-blurb p {
+font-size: 60px;
+font-family: Impact, "Arial Black", "Myriad Pro", Arial, serif;
+color: #7E92A9;
+font-weight: 600;
 }
 
 div#content {
 position: relative;
 float:left;
-width: 52.5%;
+width: 50%;
 /* background-color: red; */
 margin: 170px 10px 0px 0px;
 }
+
 
 div.shortworks {
 float: left;
