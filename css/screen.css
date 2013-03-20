@@ -75,10 +75,16 @@ div#skillshapes {
 background: black;
 margin-top: 30px;
 }
+
+div#skillshapes p {
+font-family: Georgia, sans-serif;
+font-weight: 600;
+}
+
 .circle-1 {
 width: 6%;
-background: orange;
-padding: 80px;
+background: #8682AC;
+padding: 70px;
 border-radius: 100px;
 float: left;
 margin: 5px;
@@ -86,17 +92,16 @@ margin: 5px;
 
 .square-1 {
 width: 6%;
-background: blue;
-padding: 80px;
-border-radius: 20px;
+background: #354251;
+padding: 70px;
 float: left;
 margin: 5px;
 }
 
 .circle-2 {
 width: 6%;
-background: yellow;
-padding: 80px;
+background: #7E92A9;
+padding: 70px;
 border-radius: 100px;
 float: left;
 margin: 5px;
@@ -104,30 +109,31 @@ margin: 5px;
 
 .square-2 {
 width: 6%;
-background: green;
-padding: 80px;
-border-radius: 20px;
+background: #203042;
+padding: 70px;
 float: left;
+margin: 5px;
 }
 
 .circle-3 {
 width: 6%;
-background: pink;
-padding: 80px;
+background: #BEB289;
+padding: 70px;
 border-radius: 100px;
 float: left;
+margin: 5px;
 }
 
 .square-3 {
 width: 6%;
-background: grey;
-padding: 80px;
-border-radius: 20px;
+background: #453753;
+padding: 70px;
 float: left;
+margin: 5px;
 }
 
 .square-3: hover {
-border-radius: 100px;
+border-radius: -100px;
 }
 
 
@@ -163,21 +169,24 @@ margin: 170px 10px 0px 0px;
 
 div.shortworks {
 float: left;
-background: #D0C8B4;
+/* background: #BEB698; */
 width: 55%;
 padding: 15px 15px 50px 20px;
 margin: 15px;
 margin-bottom: 40px;
+border-radius: 30px;
+
 }
 
 div.shortworks h3 {
-border-top: 3px solid green;
+border-top: 10px solid green;
+font-weight: 600;
 float: left;
 margin-right: 30px;
 }
 
 div.shortworks img {
-border-style: none;
+border: 1px solid black;
 }
 
 /*Navigation*/
@@ -196,8 +205,8 @@ color: #fff;
 width: 6%;
 float: left;
 padding: 100px 70px 15px 20px; 
-border-bottom-right-radius: 15px;
-border-bottom-left-radius: 15px;
+/* border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px; */
 margin: 0px;
 }
 
