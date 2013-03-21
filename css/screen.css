@@ -26,7 +26,6 @@ html {
 
 body {
 background-color: #FCF7E6;
-
 }
 
 /* Major Divisions */
@@ -34,9 +33,10 @@ background-color: #FCF7E6;
 /* Page (Containing Div) */
 
 div#page {
-margin: 25px auto;
+margin: auto;
 padding: 0 1em;
-max-width: 80.75em;  /* 1292 / 16px= 80.75%*/
+/* max-width: 80.75em;  1292 / 16px= 80.75%*/
+
 }
 
 
@@ -48,22 +48,64 @@ background: black;
 }
 
 div#header {
-position: relative;
-width: 43.94%;
 float: left;
-
+width:  30.96%;  /*   400 / 1292 = .30959 */
+margin-right:  7.12%;    /*distance between logo header and navigation     92 / 1292= .0712    */
 }
 
-div#header img {
+
+/*div#header img {
 padding: 0 0 0 30px;
 }
 
 div#header h1 {
-font-size: 300%;
-padding: 0 0 0 20px;
+}   */
+
+/*Navigation*/
+ul#navigation {
+width: 38.08% ;   /*  492 / 1292 = .3808  */
+float: left;
+margin-left: 7.12%;    /*distance between logo header and navigation     92 / 1292= .0712    */
+}
+
+ul#navigation li a{
+font-family: Georgia, serif;
+font-weight: 600;
+font-size: 1.5em;
+color: #fff;
+}
+
+.about, .work, .home, .connect {
+width: 9.52%;     /*123 / 1292 = .0952 */
+float: left;
+padding: 100px 60px 15px 20px; 
+/* border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px; */
+margin: 0px;
 }
 
 
+.home {
+background-color: #434157;
+border-bottom-left-radius: 15px;
+}
+
+.home:active {
+border-radius: 30px;
+}
+
+.about {
+background-color: #3B4652;
+}
+
+.work {
+background-color: #493D55;
+}
+
+.connect {
+background-color: #43405D;
+border-bottom-right-radius: 15px;
+}
 
 /*Sidebar, about me brief*/
 div#sidebar {
@@ -162,7 +204,7 @@ padding: 20px 400px 0px 80px;
 }
 
 div#big-blurb p {
-font-size: 60px;
+font-size: 4.5em;   /*   72 / 16 =   */
 font-family: Impact, "Arial Black", "Myriad Pro", Arial, serif;
 color: #7E92A9;
 font-weight: 600;
@@ -199,47 +241,5 @@ div.shortworks img {
 border: 1px solid black;
 }
 
-/*Navigation*/
-ul#navigation {
-width: ;
-}
 
-ul#navigation li a{
-font-family: Georgia, serif;
-font-weight: 600;
-font-size: 150%;
-color: #fff;
-}
-
-.about, .work, .home, .connect {
-width: 6%;
-float: left;
-padding: 100px 70px 15px 20px; 
-/* border-bottom-right-radius: 15px;
-border-bottom-left-radius: 15px; */
-margin: 0px;
-}
-
-
-.home {
-background-color: #434157;
-border-bottom-left-radius: 15px;
-}
-
-.home:active {
-border-radius: 30px;
-}
-
-.about {
-background-color: #3B4652;
-}
-
-.work {
-background-color: #493D55;
-}
-
-.connect {
-background-color: #43405D;
-border-bottom-right-radius: 15px;
-}
 
