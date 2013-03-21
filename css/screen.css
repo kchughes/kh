@@ -34,11 +34,19 @@ background-color: #FCF7E6;
 /* Page (Containing Div) */
 
 div#page {
+margin: 25px auto;
+padding: 0 1em;
+max-width: 80.75em;  /* 1292 / 16px= 80.75%*/
 }
 
 
 
 /* Header */
+
+div#topblock {
+background: black;
+}
+
 div#header {
 position: relative;
 width: 43.94%;
