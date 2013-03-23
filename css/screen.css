@@ -20,13 +20,14 @@ index . : home, about, work, connect, blurb, short-works
 html {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  background: #FCF7E6;
 }
 
 /* Body */
 
-body {
+/* body {
 background-color: #FCF7E6;
-}
+} */
 
 /* Major Divisions */
 
@@ -49,16 +50,16 @@ background: black;
 
 div#header {
 float: left;
-width:  30.96%;  /*   400 / 1292 = .30959 */
+width:  38.08%;  /*   492 / 1292 = .3808 */
 margin-right:  7.12%;    /*distance between logo header and navigation     92 / 1292= .0712    */
 }
 
 
-/*div#header img {
-padding: 0 0 0 30px;
+div#header img {
+width: width:  30.96%;  /*   400 / 1292 = .30959 */
 }
 
-div#header h1 {
+/* div#header h1 {
 }   */
 
 /*Navigation*/
