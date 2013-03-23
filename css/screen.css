@@ -36,7 +36,7 @@ background-color: #FCF7E6;
 div#page {
 margin: auto;
 padding: 0 1em;
-/* max-width: 80.75em;  1292 / 16px= 80.75%*/
+max-width: 80.75em; /* 1292 / 16px= 80.75%*/
 
 }
 
@@ -51,12 +51,14 @@ background: black;
 div#header {
 float: left;
 width:  38.08%;  /*   492 / 1292 = .3808 */
-margin-right:  7.12%;    /*distance between logo header and navigation     92 / 1292= .0712    */
+margin-left:  12.69%;    /*    164 / 1292= .1269    */
+background: red;
 }
 
 
 div#header img {
-width: width:  30.96%;  /*   400 / 1292 = .30959 */
+/* width:  27.05%;    349.5 / 1292 = .2705 */
+width: 349.5px;
 }
 
 /* div#header h1 {
@@ -64,22 +66,23 @@ width: width:  30.96%;  /*   400 / 1292 = .30959 */
 
 /*Navigation*/
 ul#navigation {
-width: 38.08% ;   /*  492 / 1292 = .3808  */
+/*width: 39.62% ;   /*  512 / 1292 = .3962  */
 float: left;
-margin-left: 7.12%;    /*distance between logo header and navigation     92 / 1292= .0712    */
+margin-left: 9.52%;    /*distance between logo header and navigation     123 / 1292= .0952    */
+background: green;
 }
 
 ul#navigation li a{
 font-family: Georgia, serif;
-font-weight: 600;
-font-size: 1.5em;
+/*font-weight: bold;  */
+font-size: 1.1em;
 color: #fff;
 }
 
 .about, .work, .home, .connect {
-width: 9.52%;     /*123 / 1292 = .0952 */
+width: 9.9%;     /*128 / 1292 = .0990 */
 float: left;
-padding: 100px 60px 15px 20px; 
+padding: 100px 50px 15px 20px; 
 /* border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px; */
 margin: 0px;
