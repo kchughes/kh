@@ -113,12 +113,13 @@ border-bottom-right-radius: 15px;
 
 /*Sidebar, about me brief*/
 div#sidebar {
-position: absolute; 
-/* left: 0px; 
+/*position: absolute; 
+ left: 0px; 
 width: 23.84%;   /*  308 / 1292 = .23839 */
 /* margin: 200px 20px 0px 30px;
 padding: 15px 15px 400px 20px;
 /*background-color: #D0C8B4;*/
+margin-top: 
 }
 
 p.blurb {
@@ -208,11 +209,12 @@ float: left;
 }
 
 div#big-blurb p {
-font-size: 4.3em;   /*   approx 72 / 16 =   */
+font-size: 2.8em;  
 font-family: Impact, "Arial Black", "Myriad Pro", Arial, serif;
 color: #7E92A9;
 font-weight: bold;
 margin-left:  12.69%;    /*    164 / 1292= .1269    */
+margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
 }
 
 div#content {
