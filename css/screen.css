@@ -45,10 +45,11 @@ padding: 0 1em;
 /* Header */
 
 div#topblock {
-background: black;
+background: green;
 }
 
 div#header {
+display: block;
 float: left;
 width:  38.08%;  /*   492 / 1292 = .3808 */
 margin-left:  12.69%;    /*    164 / 1292= .1269    */
@@ -113,8 +114,9 @@ border-bottom-right-radius: 15px;
 
 /*Sidebar, about me brief*/
 div#sidebar {
-/*position: absolute; 
- left: 0px; 
+display: inline;
+/* position: absolute; */
+left: 0px; 
 width: 23.84%;   /*  308 / 1292 = .23839 */
 /* margin: 200px 20px 0px 30px;
 padding: 15px 15px 400px 20px;
@@ -123,13 +125,14 @@ margin-top:
 }
 
 p.blurb {
+display: inline;
 font-size: 20px;
 color: #3D3348;
 font-weight: bold;
 }
 
 div#skillshapes {
-background: black;
+background: green;
 margin-top: 30px;
 }
 
