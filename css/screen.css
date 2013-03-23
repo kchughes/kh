@@ -12,7 +12,6 @@ muted
 /* ids and classes
 index # : page, banner, header, navigation, content-body, sidebar, content, shortworks, connect-short, footer
 index . : home, about, work, connect, blurb, short-works
-
 */
 
 
@@ -36,11 +35,9 @@ background-color: #FCF7E6;
 div#page {
 margin: auto;
 padding: 0 1em;
-/* max-width: 80.75em; /* 1292 / 16px= 80.75%*/
+max-width: 80.75em; /* 1292 / 16px= 80.75%*/
 
 }
-
-
 
 /* Header */
 
@@ -52,7 +49,7 @@ div#header {
 display: block;
 float: left;
 width:  38.08%;  /*   492 / 1292 = .3808 */
-margin-left:  12.69%;    /*    164 / 1292= .1269    */
+/* margin-left:  12.69%;    /*    164 / 1292= .1269    */
 background: red;
 }
 
@@ -68,8 +65,9 @@ width: 349.5px;
 /*Navigation*/
 ul#navigation {
 /*width: 39.62% ;   /*  512 / 1292 = .3962  */
-float: left;
-margin-left: 9.52%;    /*distance between logo header and navigation     123 / 1292= .0952    */
+display: inline;
+float: right;
+ /*margin-left: 9.52%;    /*distance between logo header and navigation     123 / 1292= .0952    */
 background: green;
 }
 
@@ -121,7 +119,7 @@ width: 23.84%;     308 / 1292 = .23839 */
 /* margin: 200px 20px 0px 30px;
 padding: 15px 15px 400px 20px;
 /*background-color: #D0C8B4;
-margin-top: */
+margin-top: .*/
 }
 
 p.blurb {
@@ -207,17 +205,19 @@ float: left;
 
 /* Introductory Large text */
 div#big-blurb {
+display: inline;
 float: left;
 /*padding: 20px 400px 0px 80px; */
 }
 
 div#big-blurb p {
-font-size: 2.8em;  
+font-size: 3em;  
 font-family: Impact, "Arial Black", "Myriad Pro", Arial, serif;
 color: #7E92A9;
 font-weight: bold;
-margin-left:  12.69%;    /*    164 / 1292= .1269    */
+  /*margin-left:  12.69%;      164 / 1292= .1269    */
 margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
+margin-top:  7.2%;   /*  94 / 1292 =  .0727  */
 }
 
 div#content {
