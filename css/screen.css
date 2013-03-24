@@ -161,7 +161,7 @@ font-weight: bold;
 .circle-1 {
 width: 6%;
 background: #8682AC;
-padding: 70px;
+padding: 75px;
 border-radius: 100px;
 float: left;
 margin: 5px;
@@ -170,9 +170,10 @@ margin: 5px;
 .square-1 {
 width: 6%;
 background: #354251;
-padding: 70px;
+padding: 75px;
 float: left;
 margin: 5px;
+margin-left: 1.54%;   /* 20/1292= .015479 */
 border-radius: 100px;
 
 }
@@ -180,18 +181,20 @@ border-radius: 100px;
 .circle-2 {
 width: 6%;
 background: #7E92A9;
-padding: 70px;
+padding: 75px;
 border-radius: 100px;
 float: left;
 margin: 5px;
+margin-left: 1.54%;   /* 20/1292= .015479 */
 }
 
 .square-2 {
 width: 6%;
 background: #203042;
-padding: 70px;
+padding: 75px;
 float: left;
 margin: 5px;
+margin-left: 1.54%;   /* 20/1292= .015479 */
 border-radius: 100px;
 
 }
@@ -199,18 +202,20 @@ border-radius: 100px;
 .circle-3 {
 width: 6%;
 background: #BEB289;
-padding: 70px;
+padding: 75px;
 border-radius: 100px;
 float: left;
 margin: 5px;
+margin-left: 1.54%;   /* 20/1292= .015479 */
 }
 
 .square-3 {
 width: 6%;
 background: #453753;
-padding: 70px;
+padding: 75px;
 float: left;
 margin: 5px;
+margin-left: 1.54%;   /* 20/1292= .015479 */
 border-radius: 100px;
 
 }
@@ -248,25 +253,40 @@ margin-top:  7.2%;   /*  94 / 1292 =  .0727  */
 div#content {
 /* position: relative;  */
 float: left;
-width: 100%; /*  564 / 1292 = .4365  */
+width: 100%;   /*564 / 1292 = .4365  */
 background-color: red; 
 margin-top:  4.14%; /* 53.5/1292 = .0414 */
 /*  margin: 170px 10px 0px 0px;  */
 }
 
 div#short-print, div#short-digital {
+display: block;
 position: relative;
 float: left;
-width: 36.6%;  /*  473/1292= .366 */
+width: 48%;  /*  492/1292= .3808    math is too short, actual percentage is guesstimate*/
 }
 
 div#short-print {
-
+background: pink;
 }
 
-div#short-print {
-
+div#short-digital {
+margin-left: 1.54%;   /* 20/1292= .015479 */
+background: orange;
 }
+
+/*  Footer   */
+
+div#footer {
+float: left; 
+position: relative;
+z-index: 9999;
+background: green;
+width: 100%;
+padding: 20px 0px 100px 0px;
+margin-top:  4.14%; /* 53.5/1292 = .0414 */
+}
+
 
 
 /* style for previous content
