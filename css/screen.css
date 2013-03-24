@@ -19,7 +19,21 @@ index . : home, about, work, connect, blurb, short-works
 html {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background: #FCF7E6;
+  background: #C1C0BE;
+/* IE1 */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #C1C0BE));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
 }
 
 /* Body */
@@ -36,13 +50,13 @@ div#page {
 margin: auto;
 padding: 0 1em;
 max-width: 80.75em; /* 1292 / 16px= 80.75%*/
-
+background: yellow;
 }
 
 /* Header */
 
 div#topblock {
-background: green;
+background: orange;
 }
 
 div#header {
@@ -87,7 +101,6 @@ border-bottom-left-radius: 15px; */
 margin: 0px;
 }
 
-
 .home {
 background-color: #434157;
 border-bottom-left-radius: 15px;
@@ -112,26 +125,32 @@ border-bottom-right-radius: 15px;
 
 /*Sidebar, about me brief*/
 div#sidebar {
-display: inline;
+display: block;
 /* position: absolute; */
-/*left: 0px; 
-width: 23.84%;     308 / 1292 = .23839 */
+/*left: 0px;  */
+position: relative;
+float: left;
+width: 100%;     /*308 / 1292 = .23839  */
 /* margin: 200px 20px 0px 30px;
 padding: 15px 15px 400px 20px;
 /*background-color: #D0C8B4;
 margin-top: .*/
 }
 
+div#skillshapes {
+
+background: blue;
+/* margin-top: 30px; */
+width: 100%;
+margin-top:  4.14%; /* 53.5/1292 = .0414 */
+}
+
+
 p.blurb {
 display: inline;
 font-size: 20px;
 color: #3D3348;
 font-weight: bold;
-}
-
-div#skillshapes {
-background: green;
-margin-top: 30px;
 }
 
 div#skillshapes p {
@@ -154,6 +173,8 @@ background: #354251;
 padding: 70px;
 float: left;
 margin: 5px;
+border-radius: 100px;
+
 }
 
 .circle-2 {
@@ -171,6 +192,8 @@ background: #203042;
 padding: 70px;
 float: left;
 margin: 5px;
+border-radius: 100px;
+
 }
 
 .circle-3 {
@@ -188,6 +211,8 @@ background: #453753;
 padding: 70px;
 float: left;
 margin: 5px;
+border-radius: 100px;
+
 }
 
 .square-3: hover {
@@ -223,8 +248,9 @@ margin-top:  7.2%;   /*  94 / 1292 =  .0727  */
 div#content {
 /* position: relative;  */
 float: left;
-width: 43.65%; /*  564 / 1292 = .4365  */
+width: 100%; /*  564 / 1292 = .4365  */
 background-color: red; 
+margin-top:  4.14%; /* 53.5/1292 = .0414 */
 /*  margin: 170px 10px 0px 0px;  */
 }
 
