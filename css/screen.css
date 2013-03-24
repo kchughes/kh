@@ -264,15 +264,48 @@ display: block;
 position: relative;
 float: left;
 width: 48%;  /*  492/1292= .3808    math is too short, actual percentage is guesstimate*/
+padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
+
 }
 
 div#short-print {
 background: pink;
 }
 
+div#short-print h2 {
+text-align: center;
+font-size: 2.5em;
+color: white;
+font-weight: bold;
+}
+
+div#short-print img {
+position: relative;
+float: left;
+}
+
+div#short-print p {
+font-size: 1.2em;
+color: grey;
+}
+
 div#short-digital {
 margin-left: 1.54%;   /* 20/1292= .015479 */
 background: orange;
+}
+
+div#short-digital h2 {
+text-align: center;
+font-size: 2.5em;
+color: gray;
+font-weight: bold;
+
+}
+
+div#short-digital img {
+position: relative;
+float: left;
+
 }
 
 /*  Footer   */
