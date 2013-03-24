@@ -123,7 +123,21 @@ background-color: #43405D;
 border-bottom-right-radius: 15px;
 }
 
-/*Sidebar, about me brief*/
+/*Skills bar on homepage */
+div#mainbar {
+display: block;
+/* position: absolute; */
+/*left: 0px;  */
+position: relative;
+float: left;
+width: 100%;     /*308 / 1292 = .23839  */
+/* margin: 200px 20px 0px 30px;
+padding: 15px 15px 400px 20px;
+/*background-color: #D0C8B4;
+margin-top: .*/
+}
+
+/*Sidebar, like main bar, but on the side*/
 div#sidebar {
 display: block;
 /* position: absolute; */
