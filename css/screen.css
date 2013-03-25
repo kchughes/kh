@@ -82,7 +82,6 @@ ul#navigation {
 display: inline;
 float: right;
  /*margin-left: 9.52%;    /*distance between logo header and navigation     123 / 1292= .0952    */
-background: green;
 }
 
 ul#navigation li a{
@@ -106,7 +105,7 @@ background-color: #434157;
 border-bottom-left-radius: 15px;
 }
 
-.home:active {
+.home:active, .home:hover {
 border-radius: 30px;
 }
 
@@ -269,7 +268,7 @@ div#content {
 /* position: relative;  */
 float: left;
 width: 100%;   /*564 / 1292 = .4365  */
-background-color: red; 
+/* background-color: red; */
 margin-top:  4.14%; /* 53.5/1292 = .0414 */
 /*  margin: 170px 10px 0px 0px;  */
 }
@@ -298,7 +297,7 @@ padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 }
 
 div#short-print {
-background: pink;
+/* background: pink; */
 }
 
 div#short-print h2 {
@@ -320,7 +319,7 @@ color: grey;
 
 div#short-digital {
 margin-left: 1.54%;   /* 20/1292= .015479 */
-background: orange;
+/* background: orange; */
 }
 
 div#short-digital h2 {
