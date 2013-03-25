@@ -78,10 +78,10 @@ width: 349.5px;
 
 /*Navigation*/
 ul#navigation {
-/*width: 39.62% ;   /*  512 / 1292 = .3962  */
+/*width: 39.62% ;     512 / 1292 = .3962  */
 display: inline;
 float: right;
- /*margin-left: 9.52%;    /*distance between logo header and navigation     123 / 1292= .0952    */
+ /*margin-left: 9.52%;   distance between logo header and navigation     123 / 1292= .0952    */
 }
 
 ul#navigation li a{
@@ -113,13 +113,24 @@ border-radius: 30px;
 background-color: #3B4652;
 }
 
+.about:active, .home:hover {
+border-radius: 30px;
+}
+
 .work {
 background-color: #493D55;
+}
+.work:active, .home:hover {
+border-radius: 30px;
 }
 
 .connect {
 background-color: #43405D;
 border-bottom-right-radius: 15px;
+}
+
+.connect:active, .home:hover {
+border-radius: 30px;
 }
 
 /*Skills bar on homepage */
