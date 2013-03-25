@@ -63,7 +63,7 @@ div#header {
 display: block;
 float: left;
 width:  38.08%;  /*   492 / 1292 = .3808 */
-/* margin-left:  12.69%;    /*    164 / 1292= .1269    */
+/* margin-left:  12.69%;      164 / 1292= .1269    */
 /* background: red; */
 }
 
@@ -267,7 +267,7 @@ margin-right: 400px;
 
 div#big-blurb p {
 font-size: 3em;  
-font-family: Impact, "Arial Black", "Myriad Pro", Arial, serif;
+font-family: "Arial Black", "Myriad Pro", Arial, serif;
 color: #7E92A9;
 font-weight: bold;
   /*margin-left:  12.69%;      164 / 1292= .1269    */
