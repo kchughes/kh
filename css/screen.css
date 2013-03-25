@@ -250,7 +250,7 @@ float: left;
 div#big-blurb {
 display: inline;
 float: left;
-margin-right: 130px;
+margin-right: 400px;
 /*padding: 20px 400px 0px 80px; */
 }
 
@@ -342,6 +342,17 @@ float: left;
 width: 50%;  /*  492/1292= .3808    math is too short, actual percentage is guesstimate*/
 padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 }
+
+
+/* About Page specific */
+
+div#general p, div#stats ul {
+width: 75%;
+font-size: 1.5em;
+line-height: 1.6em;
+}
+
+
 
 /*  Footer   */
 
