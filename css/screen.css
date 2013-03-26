@@ -363,6 +363,10 @@ font-size: 1.5em;
 line-height: 1.6em;
 }
 
+div#general h3, div#stats h3 {
+font-size: 1.7em;
+font-weight: bold;
+}
 
 
 /*  Footer   */
