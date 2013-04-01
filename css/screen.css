@@ -357,6 +357,11 @@ padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 
 /* About Page specific */
 
+div#general {
+margin-left: 35%;
+
+}
+
 div#general p {
 font-family: "Varela", Arial, sans-serif;
 margin-bottom: .9em;
@@ -368,7 +373,6 @@ font-family: "Nunito", Arial, sans-serif;
 }
 
 div#general p, div#stats ul {
-width: 75%;
 font-size: 1.1em;
 line-height: 1.6em;
 color: #484754;
