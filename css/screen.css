@@ -357,10 +357,28 @@ padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 
 /* About Page specific */
 
+div#general p {
+font-family: "Varela", Arial, sans-serif;
+margin-bottom: .9em;
+}
+
+div#general h3 {
+color: #43405D;
+font-family: "Nunito", Arial, sans-serif;
+}
+
 div#general p, div#stats ul {
 width: 75%;
-font-size: 1.5em;
+font-size: 1.1em;
 line-height: 1.6em;
+color: #484754;
+}
+
+div#general .highlight-blue {
+color: #96A3B4;
+}
+div#general .highlight-green {
+color: #6B956B;
 }
 
 div#general h3, div#stats h3 {
