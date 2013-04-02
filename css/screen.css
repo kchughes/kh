@@ -56,8 +56,19 @@ max-width: 80.75em; /* 1292 / 16px= 80.75%*/
 /* Header */
 
 div#topblock {
-background: grey;
+background: #493D55;
+padding: 10px 0px 0px 0px;
+width: 100%;
 }
+
+ {
+float: left; 
+position: relative;
+z-index: 9999;
+
+}
+
+
 
 div#header {
 display: block;
@@ -397,7 +408,7 @@ div#footer {
 float: left; 
 position: relative;
 z-index: 9999;
-background: grey;
+background: #434157;
 width: 100%;
 padding: 20px 0px 100px 0px;
 margin-top:  4.14%; /* 53.5/1292 = .0414 */
