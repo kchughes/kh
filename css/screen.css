@@ -359,16 +359,43 @@ padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 }
 
 
+.digital {
+text-transform: uppercase;
+color: gray;
+font-size: 1.1em;
+margin-right: 20px;
+margin-left: 20px;
+}
+
+.print {
+text-transform: uppercase;
+color: green;
+font-size: 1.1em;
+margin-right: 20px;
+}
+
 /*Work Page specific */
 div#about-work {
 margin-left: 25%;
 }
 
-div#about-work p, ul{
+div#about-work p, div#about-work ul{
 font-family: "Varela", Arial, sans-serif;
+font-size: 1.3em;
 margin-bottom: .9em;
 color: #493D55;
 }
+
+div#about-work ul{
+color: #43405D;
+font-size: 1.1em;
+margin-left: 30px;
+}
+
+div#about-work li{
+margin-right: 100px;
+}
+
 /* About Page specific */
 
 div#general {
