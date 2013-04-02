@@ -400,12 +400,14 @@ margin-right: 100px;
 
 div#general {
 margin-left: 35%;
-
+background: rgb (197, 214, 215);
+background: rgba(197, 214, 215, 0.2);
+border-radius: 15px;
 }
 
 div#general p {
 font-family: "Varela", Arial, sans-serif;
-margin-bottom: .9em;
+margin: 2em 4em;
 }
 
 div#general h3 {
