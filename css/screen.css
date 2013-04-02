@@ -265,7 +265,7 @@ div#big-blurb {
 display: inline;
 float: left;
 margin-right: 400px;
-background: green;
+
 /*padding: 20px 400px 0px 80px; */
 }
 
@@ -359,6 +359,16 @@ padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 }
 
 
+/*Work Page specific */
+div#about-work {
+margin-left: 25%;
+}
+
+div#about-work p, ul{
+font-family: "Varela", Arial, sans-serif;
+margin-bottom: .9em;
+color: #493D55;
+}
 /* About Page specific */
 
 div#general {
