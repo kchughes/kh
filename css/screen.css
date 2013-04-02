@@ -377,7 +377,13 @@ margin-right: 20px;
 
 /*Work Page specific */
 div#about-work {
-margin-left: 25%;
+float: left;
+margin-left: 35%;
+background: rgb (197, 214, 215);
+background: rgba(197, 214, 215, 0.2);
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-left: 30px solid #C5D6D7;
 }
 
 div#about-work p, div#about-work ul{
