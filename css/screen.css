@@ -265,6 +265,7 @@ div#big-blurb {
 display: inline;
 float: left;
 margin-right: 400px;
+background: green;
 /*padding: 20px 400px 0px 80px; */
 }
 
