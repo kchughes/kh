@@ -294,6 +294,7 @@ div#work-content {
 float: left;
 width: 78%; /*53.87%;   696 / 1292 = .53869  */
 margin-top:  4.14%; /* 53.5/1292 = .0414 */
+margin-left: 40%;
 /*  margin: 170px 10px 0px 0px;  */
 }
 
@@ -393,6 +394,12 @@ margin-bottom: .9em;
 color: #493D55;
 }
 
+div#about-work h3 {
+color: #43405D;
+font-family: "Signika", Arial, sans-serif;
+font-size:2em;
+}
+
 div#about-work ul{
 color: #43405D;
 font-size: 1.1em;
@@ -421,7 +428,8 @@ margin: 2em 2.5em;
 
 div#general h3 {
 color: #43405D;
-font-family: "Nunito", Arial, sans-serif;
+font-family: "Signika", Arial, sans-serif;
+font-size:2em;
 }
 
 div#general p, div#stats ul {
