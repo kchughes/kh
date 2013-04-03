@@ -413,41 +413,30 @@ div#about-work li{
 margin-right: 100px;
 }
 
-/* About Page specific */
 
-.blurb-light-about {
-    color: #BEC1E3;
-}
+
+/***********Styles Specific To About Page */
 
 div#about {
-display: block;
-margin-left: 35%;
-margin-top: 5%;
-background: rgb (197, 214, 215);
-background: rgba(197, 214, 215, 0.2);
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-border-left: 30px solid #C5D6D7;
-padding: 2em;
+    display: block;
+    margin-left: 35%;
+    margin-top: 5%;
+    background: rgb (197, 214, 215);
+    background: rgba(197, 214, 215, 0.2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 30px solid #C5D6D7;
+    padding: 2em;
 }
 
 div#about p {
-font-family: "Varela", Arial, sans-serif;
-margin-bottom: 1.3em;
+    font-family: "Varela", Arial, sans-serif;
+    margin-bottom: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #484754;
 }
 
-div#about h3 {
-color: #43405D;
-font-family: "Signika", Arial, sans-serif;
-font-size:2em;
-margin: 0em 1.6em;
-}
-
-div#about p  {
-font-size: 1.1em;
-line-height: 1.6em;
-color: #484754;
-}
 
 div#about .highlight-blue {
 color: #96A3B4;
@@ -456,9 +445,8 @@ div#about .highlight-green {
 color: #6B956B;
 }
 
-div#about h3, div#stats h3 {
-font-size: 1.7em;
-font-weight: bold;
+.highlight-purple {
+    color: #BEC1E3;
 }
 
 
