@@ -256,16 +256,17 @@ border-radius: -100px;
 /* Content */
 
 div#content-body {
-float: left;
+    float: left;
 /* padding-left: 30px;  */
 }
 
 /* Introductory Large text */
 div#big-blurb {
-display: block;
-width: 100%;
-float: left;
-margin-right: 400px;
+  display: block;
+  position: relative; 
+  width: 100%;
+  float: left;
+  margin-right: 400px;
 
 /*padding: 20px 400px 0px 80px; */
 }
@@ -280,8 +281,11 @@ margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
 margin-top:  7.2%;   /*  94 / 1292 =  .0727  */
 }
 
+
+
 div#content {
 /* position: relative;  */
+display: block;
 float: left;
 width: 100%;   /*564 / 1292 = .4365  */
 /* background-color: red; */
@@ -412,8 +416,14 @@ margin-right: 100px;
 
 /* About Page specific */
 
-div#general {
+.blurb-light-about {
+    color: #BEC1E3;
+}
+
+div#about {
+display: block;
 margin-left: 35%;
+margin-top: 5%;
 background: rgb (197, 214, 215);
 background: rgba(197, 214, 215, 0.2);
 border-top-right-radius: 15px;
@@ -421,31 +431,32 @@ border-bottom-right-radius: 15px;
 border-left: 30px solid #C5D6D7;
 }
 
-div#general p {
+div#about p {
 font-family: "Varela", Arial, sans-serif;
-margin: 2em 2.5em;
+margin: 1.5em 2.5em;
 }
 
-div#general h3 {
+div#about h3 {
 color: #43405D;
 font-family: "Signika", Arial, sans-serif;
 font-size:2em;
+margin: 0em 1.6em;
 }
 
-div#general p, div#stats ul {
+div#about p  {
 font-size: 1.1em;
 line-height: 1.6em;
 color: #484754;
 }
 
-div#general .highlight-blue {
+div#about .highlight-blue {
 color: #96A3B4;
 }
-div#general .highlight-green {
+div#about .highlight-green {
 color: #6B956B;
 }
 
-div#general h3, div#stats h3 {
+div#about h3, div#stats h3 {
 font-size: 1.7em;
 font-weight: bold;
 }
