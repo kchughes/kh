@@ -262,23 +262,22 @@ div#content-body {
 
 /* Introductory Large text */
 div#big-blurb {
-  display: block;
   position: relative; 
-  width: 100%;
+  width: 30%;
   float: left;
-  margin-right: 400px;
+  /* margin-right: 400px; */
 
 /*padding: 20px 400px 0px 80px; */
 }
 
 div#big-blurb p {
-font-size: 3em;  
+font-size: 4em;  
 font-family: "Myriad Pro", Arial, serif;
 color: #7E92A9;
 font-weight: bold;
   /*margin-left:  12.69%;      164 / 1292= .1269    */
 margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
-margin-top:  7.2%;   /*  94 / 1292 =  .0727  */
+margin-top:  17.2%;   /*   / 1292 =  .0727  */
 }
 
 
@@ -429,11 +428,12 @@ background: rgba(197, 214, 215, 0.2);
 border-top-right-radius: 15px;
 border-bottom-right-radius: 15px;
 border-left: 30px solid #C5D6D7;
+padding: 2em;
 }
 
 div#about p {
 font-family: "Varela", Arial, sans-serif;
-margin: 1.5em 2.5em;
+margin-bottom: 1.3em;
 }
 
 div#about h3 {
