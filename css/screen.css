@@ -47,7 +47,7 @@ background-color: #FCF7E6;
 /* Page (Containing Div) */
 
 div#page {
-margin: auto;
+margin: 0em 4%; 
 padding: 0 1em;
 max-width: 80.75em; /* 1292 / 16px= 80.75%*/
 /*background: yellow; */
@@ -271,7 +271,7 @@ div#big-blurb {
 }
 
 div#big-blurb p {
-font-size: 4em;  
+font-size: 3.8em;  
 font-family: "Myriad Pro", Arial, serif;
 color: #7E92A9;
 font-weight: bold;
@@ -416,7 +416,7 @@ margin-right: 100px;
 
 
 /***********Styles Specific To About Page */
-
+@media screen (min-width:1275px)   {
 div#about {
     display: block;
     margin-left: 35%;
@@ -436,6 +436,32 @@ div#about p {
     line-height: 1.6em;
     color: #484754;
 }
+
+} /******end 1275px @media screen ********/
+
+@media screen (min-width:1000px)   {
+div#about {
+    display: block;
+    margin-left: 35%;
+    margin-top: 5%;
+    background: rgb (197, 214, 215);
+    background: rgba(197, 214, 215, 0.2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 30px solid #C5D6D7;
+    padding: 2em;
+}
+
+div#about p {
+    font-family: "Varela", Arial, sans-serif;
+    margin-bottom: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #484754;
+}
+
+
+} /*******end 1000px @media screen ******/
 
 
 div#about .highlight-blue {
@@ -468,30 +494,6 @@ padding-right: 30px;
 color: white;
 }
 
-
-/* style for previous content
-div.shortworks {
-float: left; 
-/* background: #BEB698; */
-/*width: 43.65%; /*  564 / 1292 = .4365  */
-/* padding: 15px 15px 50px 20px; */
-/*margin: 15px;
-margin-bottom: 40px;
-border-radius: 30px;
-}
-*/
-
-/*
-div.shortworks h3 {
-border-top: 10px solid green;
-font-weight: bold;
-float: left;
-/*margin-right: 30px; */
-}
-/* div.shortworks img {
-border: 1px solid black;
-}
-*/
 
 
 
