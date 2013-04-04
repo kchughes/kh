@@ -21,125 +21,88 @@ digital:
 */
 
 
-/*HTML*/
+/*****************ALL PAGES**/
 html {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  background: #C1C0BE;
-/* IE1 */ 
-background-image: -ms-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
-
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
-
-/* Opera */ 
-background-image: -o-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
-
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #C1C0BE));
-
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #C1C0BE;
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* IE*/
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* Opera */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #C1C0BE)); /* Webkit (Safari) */ 
 }
-
-/* Body */
-
-/* body {
-background-color: #FCF7E6;
-} */
-
-/* Major Divisions */
-
-/* Page (Containing Div) */
 
 div#page {
-margin: 0em 4%; 
-padding: 0 1em;
-max-width: 80.75em; /* 1292 / 16px= 80.75%*/
-/*background: yellow; */
+    margin: 0em 4%; 
+    padding: 0 1em;
+    max-width: 80.75em; /* 1292 / 16px= 80.75%*/
 }
 
-/* Header */
-
+/*****Header */
 div#topblock {
-background: #493D55;
-padding: 10px 0px 0px 0px;
-width: 100%;
+    background: #493D55;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
 }
-
 
 div#header {
-display: block;
-float: left;
-width:  38.08%;  /*   492 / 1292 = .3808 */
-/* margin-left:  12.69%;      164 / 1292= .1269    */
-/* background: red; */
+    display: block;
+    float: left;
+    width:  38.08%;  /*   492 / 1292 = .3808 */
 }
-
 
 div#header img {
 /* width:  27.05%;    349.5 / 1292 = .2705 */
 width: 349.5px;
 }
 
-/* div#header h1 {
-}   */
-
-/*Navigation*/
+/*****Navigation*/
 ul#navigation {
-/*width: 39.62% ;     512 / 1292 = .3962  */
-display: inline;
-float: right;
- /*margin-left: 9.52%;   distance between logo header and navigation     123 / 1292= .0952    */
+    /*width: 39.62% ;     512 / 1292 = .3962  */
+    display: inline;
+    float: right;
+     /*margin-left: 9.52%;   distance between logo header and navigation     123 / 1292= .0952    */
 }
 
 ul#navigation li a{
-font-family: Signika, Georgia, serif;
-/*font-weight: bold;  */
-font-size: 1.1em;
-color: #fff;
+    font-family: Signika, Georgia, serif;
+    /*font-weight: bold;  */
+    font-size: 1.1em;
+    color: #fff;
 }
 
 .about, .work, .home, .connect {
-width: 9.9%;     /*128 / 1292 = .0990 */
-float: left;
-padding: 100px 50px 15px 20px; 
-/* border-bottom-right-radius: 15px;
-border-bottom-left-radius: 15px; */
-margin: 0px;
+    width: 9.9%;     /*128 / 1292 = .0990 */
+    float: left;
+    padding: 100px 50px 15px 20px; 
+    margin: 0px;
 }
 
 .home {
-background-color: #434157;
-border-bottom-left-radius: 15px;
-}
-
-.home:active, .home:hover {
-border-radius: 30px;
+    background-color: #434157;
+    border-bottom-left-radius: 15px;
 }
 
 .about {
-background-color: #3B4652;
-}
-
-.about:active, .home:hover {
-border-radius: 30px;
+    background-color: #3B4652;
 }
 
 .work {
-background-color: #493D55;
-}
-.work:active, .home:hover {
-border-radius: 30px;
+    background-color: #493D55;
 }
 
 .connect {
-background-color: #43405D;
-border-bottom-right-radius: 15px;
+    background-color: #43405D;
+    border-bottom-right-radius: 15px;
 }
 
-.connect:active, .home:hover {
-border-radius: 30px;
+.home:active, .home:hover,
+.about:active, .about:hover,
+.work:active, .work:hover,
+.connect:active, .connect:hover {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    padding-top: 110px; /***DOES THIS WORK IN ALL BROWSERS?*/
 }
 
 /*About blurb on Home Page */
