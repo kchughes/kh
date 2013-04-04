@@ -10,8 +10,8 @@ muted
 */
 
 /* ids and classes
-html, page, body
-index: banner, header, navigation, content-body, sidebar, content, shortworks, connect-short, footer
+html, #page, (#body), #topblock, #header, #nav???, .home, .about, .work, .connect
+index: home-about, content-body, sidebar, content, shortworks, connect-short, footer
 index . : home, about, work, connect, blurb, short-works
 about: 
 work: 
@@ -53,10 +53,10 @@ div#header {
 
 div#header img {
 /* width:  27.05%;    349.5 / 1292 = .2705 */
-width: 349.5px;
+    width: 349.5px;
 }
 
-/*****Navigation*/
+/*****Navigation* HTML5??? nav */
 ul#navigation {
     /*width: 39.62% ;     512 / 1292 = .3962  */
     display: inline;
@@ -105,60 +105,48 @@ ul#navigation li a{
     padding-top: 110px; /***DOES THIS WORK IN ALL BROWSERS?*/
 }
 
-/*About blurb on Home Page */
-div#home-about {
-display: block;
-/* position: absolute; */
-/*left: 0px;  */
-position: relative;
-float: left;
-width: 100%;     /*308 / 1292 = .23839  */
-/* margin: 200px 20px 0px 30px;
-padding: 15px 15px 400px 20px;
-background-color: #D0C8B4;
-margin-top: .*/
+/********************INDEX */
+div#big-blurb-home {
+   display: block;
+    width: 100%;
+    float: left;
+   /* margin-right: 400px; */
+    /*padding: 20px 400px 0px 80px; */
 }
 
-
-
-p.blurb {
-font-size: 1.5em;
-color: #3D3348;
+div#home-about{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;     /*308 / 1292 = .23839  */
+    /* margin: 200px 20px 0px 30px;
+    padding: 15px 15px 400px 20px;
+    background-color: #D0C8B4;
+    margin-top: .*/
 }
+
 div#home-about {
-background: rgb (197, 214, 215);
+    background: rgb (197, 214, 215);
     background: rgba(197, 214, 215, 0.2);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-left: 30px solid #C5D6D7;
 }
-
-/* Content */
-
-div#content-body {
-    float: left;
-/* padding-left: 30px;  */
+p.blurb {
+    font-size: 1.5em;
+    color: #3D3348;
 }
 
-/* Introductory Large text */
+
+/******* Non-Index/Home Pages */
+/*Introductory Large text */
 div#big-blurb {
   position: relative; 
   width: 30%;
   float: left;
   /* margin-right: 400px; */
-
-/*padding: 20px 400px 0px 80px; */
+  /*padding: 20px 400px 0px 80px; */
 }
-
-div#big-blurb-home {
-  display: block;
-  width: 100%;
-  float: left;
-  /* margin-right: 400px; */
-
-/*padding: 20px 400px 0px 80px; */
-}
-
 
 div#big-blurb {
 font-size: 3.8em;  
@@ -356,7 +344,7 @@ div#work li{
 @media screen (min-width:1000px)   {
 div#about {
     display: block;
-    margin-left: 35%;
+    margin-left: 25%; /*diff */
     margin-top: 5%;
     background: rgb (197, 214, 215);
     background: rgba(197, 214, 215, 0.2);
