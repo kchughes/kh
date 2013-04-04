@@ -10,8 +10,14 @@ muted
 */
 
 /* ids and classes
-index # : page, banner, header, navigation, content-body, sidebar, content, shortworks, connect-short, footer
+html, page, body
+index: banner, header, navigation, content-body, sidebar, content, shortworks, connect-short, footer
 index . : home, about, work, connect, blurb, short-works
+about: 
+work: 
+print:
+digital:
+
 */
 
 
@@ -150,31 +156,19 @@ background-color: #D0C8B4;
 margin-top: .*/
 }
 
-/*Sidebar, like main bar, but on the side*/
-div#sidebar {
-display: block;
-/* position: absolute; */
-/*left: 0px;  */
-position: relative;
-float: left;
-width: 19.97%;     /*258 / 1292 = .19969  */
-/* margin: 200px 20px 0px 30px;
-padding: 15px 15px 400px 20px;
-background-color: #D0C8B4;
-margin-top: .*/
-}
-
 
 
 p.blurb {
-display: inline;
-font-size: 20px;
+font-size: 1.5em;
 color: #3D3348;
-font-weight: bold;
 }
-
-
-
+div#home-about {
+background: rgb (197, 214, 215);
+    background: rgba(197, 214, 215, 0.2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 30px solid #C5D6D7;
+}
 
 /* Content */
 
@@ -193,7 +187,17 @@ div#big-blurb {
 /*padding: 20px 400px 0px 80px; */
 }
 
-div#big-blurb p {
+div#big-blurb-home {
+  display: block;
+  width: 100%;
+  float: left;
+  /* margin-right: 400px; */
+
+/*padding: 20px 400px 0px 80px; */
+}
+
+
+div#big-blurb {
 font-size: 3.8em;  
 font-family: "Myriad Pro", Arial, serif;
 color: #7E92A9;
@@ -203,6 +207,23 @@ margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
 margin-top:  17.2%;   /*   / 1292 =  .0727  */
 }
 
+div#big-blurb-home {
+  display: block;
+  width: 80%;
+  float: left;
+  /* margin-right: 400px; */
+
+/*padding: 20px 400px 0px 80px; */
+}
+div#big-blurb-home {
+font-size: 3.8em;  
+font-family: "Myriad Pro", Arial, serif;
+color: #7E92A9;
+font-weight: bold;
+  /*margin-left:  12.69%;      164 / 1292= .1269    */
+margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
+margin-top:  7.2%;  /*   / 1292 =  .0727  */
+}
 
 
 div#content {
