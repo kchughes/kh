@@ -297,50 +297,33 @@ margin-left: 20px;
 
 .print {
 text-transform: uppercase;
-color: green;
+color: #BEC1E3;
 font-size: 1.1em;
 margin-right: 20px;
 }
 
-/*Work Page specific */
-div#about-work {
-float: left;
-margin-left: 35%;
-background: rgb (197, 214, 215);
-background: rgba(197, 214, 215, 0.2);
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-border-left: 30px solid #C5D6D7;
+.print a {
+    color: #7698A1;
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: uppercase;
 }
 
-div#about-work p, div#about-work ul{
-font-family: "Varela", Arial, sans-serif;
-font-size: 1.3em;
-margin-bottom: .9em;
-color: #493D55;
+.digital a {
+    color: #ADBC93;
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: uppercase;
 }
 
-div#about-work h3 {
-color: #43405D;
-font-family: "Signika", Arial, sans-serif;
-font-size:2em;
+div#print-digital h2{
+    display: inline;
+    margin-left: 100px;
 }
 
-div#about-work ul{
-color: #43405D;
-font-size: 1.1em;
-margin-left: 30px;
-}
-
-div#about-work li{
-margin-right: 100px;
-}
-
-
-
-/***********Styles Specific To About Page */
+/***********Styles Specific To About, Work Pages */
 @media screen (min-width:1275px)   {
-div#about {
+div#about, div#work {
     display: block;
     margin-left: 35%;
     margin-top: 5%;
@@ -352,13 +335,37 @@ div#about {
     padding: 2em;
 }
 
-div#about p {
+div#about p, div#work ul, div#work p {
     font-family: "Varela", Arial, sans-serif;
     margin-bottom: 1.3em;
     font-size: 1.1em;
     line-height: 1.6em;
     color: #484754;
 }
+
+div#work h3 {
+    color: #43405D;
+    font-family: "Signika", Arial, sans-serif;
+    font-size:2em;
+}
+
+div#work ul{
+    color: #43405D;
+    font-size: 1.1em;
+    margin-left: 20px;
+   -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+div#work li{
+    margin-right: 30px;
+}
+
+
 
 } /******end 1275px @media screen ********/
 
