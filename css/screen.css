@@ -366,10 +366,10 @@ div#about p {
 } /*******end 1000px @media screen ******/
 
 
-div#about .highlight-blue {
+.highlight-blue {
 color: #96A3B4;
 }
-div#about .highlight-green {
+.highlight-green {
 color: #6B956B;
 }
 
