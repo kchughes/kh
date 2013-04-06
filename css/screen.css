@@ -28,11 +28,11 @@ html {
     display: block;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    background: #C1C0BE;
-    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* IE*/
-    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* Mozilla Firefox */ 
-    background-image: -o-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* Opera */ 
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #C1C0BE)); /* Webkit (Safari) */ 
+    background: #E0DFDD;
+   /* background-image: -ms-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* IE*/
+       /*background-image: -moz-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* Mozilla Firefox */ 
+       /*background-image: -o-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); /* Opera */ 
+      /* background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #C1C0BE)); /* Webkit (Safari) */  
 }
 
 body { 
@@ -101,10 +101,12 @@ ul#navigation li a{
 
 .about {
     background-color: #3B4652;
+     border-bottom-left-radius: 15px;
 }
 
 .work {
     background-color: #493D55;
+     border-bottom-left-radius: 15px;
 }
 
 .connect {
@@ -114,12 +116,15 @@ ul#navigation li a{
 
 .home:active, .home:hover,
 .about:active, .about:hover,
-.work:active, .work:hover,
-.connect:active, .connect:hover {
-    border-bottom-right-radius: 15px;
+.work:active, .work:hover  {
     border-bottom-left-radius: 15px; 
     padding-top: 110px; /***DOES THIS WORK IN ALL BROWSERS?*/
 }
+.connect:active, .connect:hover {
+    border-bottom-right-radius: 15px;
+    padding-top: 110px;
+}
+
 
 /********************INDEX */
 div#big-blurb-home {
@@ -421,29 +426,28 @@ div#footer {
 div#container {
     
 }
-
-/*div#contact {
-    width: 90%;
-    max-width: 900px;
+div#contact {
+    width: 91%;
+    margin: auto;
+    font-family: "Karla", Arial, sans-serif;
+   
 }
 
 div#footer h3 {
-    font-size: 2em;
+    font-size: 2.1em;
     color: white;
-    padding-left: 30px;
+     font-weight: 700;
 }
 
 div#footer p a{
     display: inline;
-    padding-left: 30px;
     color: white;
 }
 
 div#footer img {
     width: 30px;
-    padding-left: 30px;
 }
-*/
+
 
 
 
