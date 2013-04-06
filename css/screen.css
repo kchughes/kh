@@ -23,7 +23,7 @@ to do: html 5 ids (e.g. footer)
 */
 
 
-/*****************ALL PAGES**/
+/*************************ALL PAGES************/
 html {
     display: block;
     font-family: Arial, sans-serif;
@@ -45,7 +45,7 @@ div#page {
     /*max-width: 80.75em; 1292 / 16px= 80.75%*/
 }
 
-/*****Header */
+/************Header ********/
 div#topblock {
     background: #493D55;
     padding: 10px 0px 0px 0px;
@@ -54,6 +54,8 @@ div#topblock {
 
 div#header {
     display: block;
+    width: 84%; /* 1143/1366= .836 */
+    margin: auto;
    /* float: left;
      width:  38.08%;    492 / 1292 = .3808 */
 }
@@ -147,22 +149,30 @@ p.blurb {
 
 /******* Non-Index/Home Pages */
 /*Introductory Large text */
+div#wrapper {
+    width: 81%;
+    margin: 0 auto;
+    clear: both;
+    /*background: yellow;*/
+}
+
 div#big-blurb {
-  position: relative; 
-  width: 30%;
-  float: left;
+    position: absolute; 
+     width: 30%;
+  float: left; 
+    z-index: 10;
   /* margin-right: 400px; */
   /*padding: 20px 400px 0px 80px; */
 }
 
 div#big-blurb {
-font-size: 3.8em;  
+font-size: 8em;  
 font-family: "Montserrat", "Myriad Pro", Arial, serif;
-color: #7E92A9;
+color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
 font-weight: 700;
   /*margin-left:  12.69%;      164 / 1292= .1269    */
 margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
-margin-top:  17.2%;   /*   / 1292 =  .0727  */
+/* margin-top:  4.2%;     / 1292 =  .0727  */
 }
 
 div#big-blurb-home {
@@ -187,11 +197,13 @@ margin-top:  7.2%;  /*   / 1292 =  .0727  */
 div#content {
 /* position: relative;  */
 display: block;
+position: relative;
+z-index: 15;
 clear: both;
-width: 90%;   /*564 / 1292 = .4365  */
-margin: auto;
+width: 100%;   /* 1115 / 1366 = .8162 */
+/*margin: auto;*/
 /* background-color: red; */
-margin-top:  4.14%; /* 53.5/1292 = .0414 */
+margin-top:  10em; /* 53.5/1292 = .0414 */
 /*  margin: 170px 10px 0px 0px;  */
 }
 
@@ -305,8 +317,8 @@ div#print-digital h2{
 @media screen (min-width:1275px)   {
 div#about, div#work {
     display: block;
-    margin-left: 35%;
-    margin-top: 5%;
+    /*margin-left: 40%;
+    margin-top: 5%; */
     background: rgb (197, 214, 215);
     background: rgba(197, 214, 215, 0.2);
     border-top-right-radius: 15px;
@@ -355,7 +367,7 @@ div#about {
     margin-left: 25%; /*diff */
     margin-top: 5%;
     background: rgb (197, 214, 215);
-    background: rgba(197, 214, 215, 0.2);
+    background: rgba(197, 214, 215, 0.3);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-left: 30px solid #C5D6D7;
