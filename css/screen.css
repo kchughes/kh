@@ -25,6 +25,7 @@ to do: html 5 ids (e.g. footer)
 
 /*****************ALL PAGES**/
 html {
+    display: block;
     font-family: Arial, sans-serif;
     font-size: 16px;
     background: #C1C0BE;
@@ -34,10 +35,14 @@ html {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #C1C0BE)); /* Webkit (Safari) */ 
 }
 
+body { 
+    display: block;
+}
+
 div#page {
-    margin: 0em 4%; 
-    padding: 0 1em;
-    max-width: 80.75em; /* 1292 / 16px= 80.75%*/
+    margin: 0em; 
+    /*padding: 0 1em;*/
+    /*max-width: 80.75em; 1292 / 16px= 80.75%*/
 }
 
 /*****Header */
@@ -49,8 +54,8 @@ div#topblock {
 
 div#header {
     display: block;
-    float: left;
-    width:  38.08%;  /*   492 / 1292 = .3808 */
+   /* float: left;
+     width:  38.08%;    492 / 1292 = .3808 */
 }
 
 div#header img {
@@ -182,8 +187,9 @@ margin-top:  7.2%;  /*   / 1292 =  .0727  */
 div#content {
 /* position: relative;  */
 display: block;
-float: left;
-width: 100%;   /*564 / 1292 = .4365  */
+clear: both;
+width: 90%;   /*564 / 1292 = .4365  */
+margin: auto;
 /* background-color: red; */
 margin-top:  4.14%; /* 53.5/1292 = .0414 */
 /*  margin: 170px 10px 0px 0px;  */
@@ -382,10 +388,8 @@ color: #6B956B;
 /*  Footer   */
 
 div#footer {
-    display: block;
-    width: 100%;
-    float: left;
-    z-index: 9999;
+    min-width: 100%;
+    clear: both;
     background: #434157;
     padding: 20px 0px 100px 0px;
     margin-top:  4.14%; /* 53.5/1292 = .0414 */
@@ -398,7 +402,7 @@ div#container {
     
 }
 
-div#contact {
+/*div#contact {
     width: 90%;
     max-width: 900px;
 }
@@ -419,7 +423,7 @@ div#footer img {
     width: 30px;
     padding-left: 30px;
 }
-
+*/
 
 
 
