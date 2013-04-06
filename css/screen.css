@@ -18,6 +18,8 @@ work:
 print:
 digital:
 
+
+to do: html 5 ids (e.g. footer)
 */
 
 
@@ -381,18 +383,25 @@ color: #6B956B;
 /*  Footer   */
 
 div#footer {
-    float: left; 
-    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
     z-index: 9999;
     background: #434157;
-    width: 100%;
     padding: 20px 0px 100px 0px;
     margin-top:  4.14%; /* 53.5/1292 = .0414 */
+    -webkit-box-shadow: inset 0px 7px 7px -7px #000; 
+    -moz-box-shadow: inset 0px 7px 7px -7px #000; 
+    box-shadow: inset 0px 7px 7px -7px #000; 
+}
+
+div#container {
+    
 }
 
 div#contact {
-    width: 25%;
-    border-right: 1px solid white;
+    width: 90%;
+    max-width: 900px;
 }
 
 div#footer h3 {
