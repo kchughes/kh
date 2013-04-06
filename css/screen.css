@@ -67,7 +67,7 @@ ul#navigation {
 }
 
 ul#navigation li a{
-    font-family: Signika, Georgia, serif;
+    font-family: "Karla", Georgia, serif;
     /*font-weight: bold;  */
     font-size: 1.1em;
     color: #fff;
@@ -152,9 +152,9 @@ div#big-blurb {
 
 div#big-blurb {
 font-size: 3.8em;  
-font-family: "Myriad Pro", Arial, serif;
+font-family: "Montserrat", "Myriad Pro", Arial, serif;
 color: #7E92A9;
-font-weight: bold;
+font-weight: 700;
   /*margin-left:  12.69%;      164 / 1292= .1269    */
 margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
 margin-top:  17.2%;   /*   / 1292 =  .0727  */
@@ -170,9 +170,9 @@ div#big-blurb-home {
 }
 div#big-blurb-home {
 font-size: 3.8em;  
-font-family: "Myriad Pro", Arial, serif;
+font-family: "Montserrat", "Myriad Pro", Arial, serif;
 color: #7E92A9;
-font-weight: bold;
+font-weight: 700;
   /*margin-left:  12.69%;      164 / 1292= .1269    */
 margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
 margin-top:  7.2%;  /*   / 1292 =  .0727  */
@@ -310,7 +310,7 @@ div#about, div#work {
 }
 
 div#about p, div#work ul, div#work p {
-    font-family: "Varela", Arial, sans-serif;
+    font-family: "Lato", /*"Noto Sans", "Puritan", "Sans Source Pro", "Varela", */Arial, sans-serif;
     margin-bottom: 1.3em;
     font-size: 1.1em;
     line-height: 1.6em;
@@ -319,7 +319,7 @@ div#about p, div#work ul, div#work p {
 
 div#work h3 {
     color: #43405D;
-    font-family: "Signika", Arial, sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     font-size:2em;
 }
 
@@ -357,7 +357,6 @@ div#about {
 }
 
 div#about p {
-    font-family: "Varela", Arial, sans-serif;
     margin-bottom: 1.3em;
     font-size: 1.1em;
     line-height: 1.6em;
