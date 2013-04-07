@@ -306,7 +306,19 @@ margin-bottom:  5.25%;      /*   42 / 1292 = .0325   */
 /* margin-top:  4.2%;     / 1292 =  .0727  */
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
+div#big-blurb {
+font-size: 6em;  
+font-family: "Montserrat", "Myriad Pro", Arial, serif;
+color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
+font-weight: 700;
+  /*margin-left:  12.69%;      164 / 1292= .1269    */
+margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
+/* margin-top:  4.2%;     / 1292 =  .0727  */
+}
+}
+
+@media screen and (min-width: 640px) {
 div#big-blurb {
 font-size: 9em;  
 font-family: "Montserrat", "Myriad Pro", Arial, serif;
@@ -317,8 +329,6 @@ margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
 /* margin-top:  4.2%;     / 1292 =  .0727  */
 }
 }
-
-
 div#big-blurb-home {
   display: block;
   width: 80%;
@@ -461,14 +471,24 @@ div#print-digital h2{
 
 div#about, div#work {
     display: block;
-    margin-left: 1%;  /* 501/1366= .3667*/
     margin-top: 15%;
     background: rgb (197, 214, 215);
     background: rgba(197, 214, 215, 0.2);
     border-radius: 15px;
-    /* border-left: 30px solid #C5D6D7; */
-    padding: .9em;
+    border-left: 7px solid #C5D6D7;
+    padding: 1em;
 }
+
+/* div#about, div#work {
+    display: block;
+    margin-left: 1%;  /* 501/1366= .3667*/
+/*    margin-top: 15%;
+    background: rgb (197, 214, 215);
+    background: rgba(197, 214, 215, 0.2);
+    border-radius: 15px;
+    border-left: 3px solid #C5D6D7; */
+ /*   padding: .9em; 
+} */
 
 @media screen and (min-width: 640px) {
 div#about, div#work {
@@ -479,7 +499,7 @@ div#about, div#work {
     background: rgba(197, 214, 215, 0.2);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-left: 30px solid #C5D6D7;
+    border-left: 16px solid #C5D6D7;
     padding: 2em;
 }
 }
@@ -488,7 +508,7 @@ div#about, div#work {
 @media screen and (min-width: 863px) {
 div#about, div#work {
     display: block;
-    margin-left: 24%;  /* 501/1366= .3667*/
+    margin-left: 20%;  /* 501/1366= .3667*/
     margin-top: 5%;
     background: rgb (197, 214, 215);
     background: rgba(197, 214, 215, 0.2);
