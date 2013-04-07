@@ -234,7 +234,7 @@ div#big-blurb-home {
     /*padding: 20px 400px 0px 80px; */
 }
 
-div#home-about{
+  /* div#home-about{
     display: block;
     position: relative;
     float: left;
@@ -244,18 +244,30 @@ div#home-about{
     background-color: #D0C8B4;
     margin-top: .*/
 }
+*/
 
 div#home-about {
+    display: block;
+    margin: auto;
     background: rgb (197, 214, 215);
     background: rgba(197, 214, 215, 0.2);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-left: 30px solid #C5D6D7;
+    border-radius: 15px;
+    border-left: 7px solid #C5D6D7;
+    padding: 1em;
 }
-p.blurb {
+div#home-about p{
+    font-family: "Lato", /*"Noto Sans", "Puritan", "Sans Source Pro", "Varela", */Arial, sans-serif;
+    margin-bottom: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #484754;
+}
+
+
+/* p.blurb {
     font-size: 1.5em;
     color: #3D3348;
-}
+} */
 
 
 /******* Non-Index/Home Pages */
@@ -263,7 +275,7 @@ p.blurb {
 
 div#wrapper {
     width: 82%; /*  1115/1366= .816 */
-    margin: 0 auto;
+    margin: 0em auto;
     clear: both;
     /*background: yellow;*/
 }
@@ -283,6 +295,19 @@ div#big-blurb {
     z-index: 10;
   /* margin-right: 400px; */
   /*padding: 20px 400px 0px 80px; */
+}
+
+div#big-blurb-home p{
+  display: block;
+  float: left;
+/*margin:  .8em; */
+font-size: 1.8em;  
+font-family: "Montserrat", "Myriad Pro", Arial, serif;
+color: #7E92A9;
+font-weight: 700;
+  /* margin-right: 400px; */
+
+/*padding: 20px 400px 0px 80px; */
 }
 
 @media screen and (min-width: 1024px) {
@@ -307,7 +332,7 @@ div#big-blurb {
 /*}
 } */
 
-div#big-blurb p{
+div#big-blurb p, div#big-blurb-home p {
 font-size: 2em;  
 font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
 color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
@@ -316,7 +341,7 @@ font-weight: 700;
 }
 
 @media screen and (min-width: 480px) {
-div#big-blurb p{
+div#big-blurb p, div#big-blurb-home p {
 font-size: 2.7em;  
 font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
 color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
@@ -326,7 +351,7 @@ font-weight: 700;
 }
 
 @media screen and (min-width: 640px) {
-div#big-blurb p{
+div#big-blurb p, div#big-blurb-home p{
 font-size: 4em;  
 font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
 color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
@@ -336,23 +361,16 @@ font-weight: 700;
 }
 
 
-div#big-blurb-home {
-  display: block;
-  width: 80%;
-  float: left;
-  /* margin-right: 400px; */
 
-/*padding: 20px 400px 0px 80px; */
-}
-div#big-blurb-home {
+/*div#big-blurb-home {
 font-size: 3.8em;  
 font-family: "Montserrat", "Myriad Pro", Arial, serif;
 color: #7E92A9;
 font-weight: 700;
   /*margin-left:  12.69%;      164 / 1292= .1269    */
-margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
-margin-top:  7.2%;  /*   / 1292 =  .0727  */
-}
+/*margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
+/*margin-top:  7.2%;    / 1292 =  .0727  */
+}*/
 
 div#work-content {
 /* position: relative;  */
@@ -373,7 +391,8 @@ div#short-print, div#short-digital {
 display: block;
 position: relative;
 float: left;
-width: 48%;  /*  492/1292= .3808    math is too short, actual percentage is guesstimate*/
+width: 100%;
+/*width: 48%;  /*  492/1292= .3808    math is too short, actual percentage is guesstimate*/
 padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 
 }
@@ -382,39 +401,34 @@ div#short-print {
 /* background: pink; */
 }
 
-div#short-print h2 {
-text-align: center;
+div#short-print h2, div#short-digital h2 {
+text-align: left;
 font-size: 2.5em;
-color: white;
 font-weight: bold;
 }
 
-div#short-print img {
+div#short-print h2 {
+color:
+}
+
+div#short-digital  h2 {
+color:
+}
+
+div#short-print img, div#short-digital img {
 position: relative;
 float: left;
+width: 90%;
 }
 
 div#short-print p {
-font-size: 1.2em;
+font-size: 1em;
 color: grey;
 }
 
 div#short-digital {
 margin-left: 1.54%;   /* 20/1292= .015479 */
 /* background: orange; */
-}
-
-div#short-digital h2 {
-text-align: center;
-font-size: 2.5em;
-color: gray;
-font-weight: bold;
-
-}
-
-div#short-digital img {
-position: relative;
-float: left;
 }
 
 div#work-print, div#work-digital {
@@ -556,7 +570,7 @@ margin-top:  10em;
 }
 
 
-div#about, div#work, div#connect {
+div#about, div#work, div#connect, div#home-about {
     display: block;
     margin-top: 15%;
     background: rgb (197, 214, 215);
@@ -620,7 +634,7 @@ div#about, div#work {
 }
 }
 
-div#about p, div#work ul, div#work p,  {
+div#about p, div#work ul, div#work p, div#home-about {
     font-family: "Lato", /*"Noto Sans", "Puritan", "Sans Source Pro", "Varela", */Arial, sans-serif;
     margin-bottom: 1.3em;
     font-size: 1em;
