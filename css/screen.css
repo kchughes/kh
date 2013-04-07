@@ -109,14 +109,14 @@ ul#navigation {
 
 ul#navigation li a{
     font-family: "Karla", Arial, sans-serif;
-    font-size: .9em;
+    font-size: 1em;
     color: #fff;
     text-align: center;
 }
 @media screen and (min-width: 600px) {
 ul#navigation li a{
     font-family: "Karla", Arial, sans-serif;
-    font-size: 1em;
+    font-size: .95em;
     color: #fff;
     text-align: center;
 }
@@ -124,16 +124,16 @@ ul#navigation li a{
 
 @media screen and (min-width: 865px) {
 ul#navigation li a{ 
-    font-size: 1.1em;
+    font-size: 1em;
 }
 }
 
 .about, .work, .home, .connect {
     width: 20%;     
     float: left;
-    padding: 60px 28px 5px 28px; 
+    padding: 60px 28px 7px 28px; 
     margin: 0px; 
-    border-radius: 35px;
+    border-radius: 32px;
     -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
     -moz-box-shadow: inset 6px -7px 7px -9px #000; 
     box-shadow: inset 6px -7px 7px -9px #000;
@@ -162,19 +162,7 @@ ul#navigation li a{
     box-shadow: inset 6px -7px 7px -9px #000;
 }
 }
-/*
-@media screen and (min-width: 600px) {
-.about, .work, .home, .connect {
-    width: 13%;     
-    float: left;
-    padding: 80px 30px 8px 30px; 
-    margin: 0px;
-    border-radius: 45px;
-    -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
-    -moz-box-shadow: inset 6px -7px 7px -9px #000; 
-    box-shadow: inset 6px -7px 7px -9px #000;
-}
-}
+
 */
 @media screen and (min-width: 863px) {
 .about, .work, .home, .connect {
@@ -187,14 +175,6 @@ ul#navigation li a{
     box-shadow: inset 6px -7px 7px -9px #000;
 }
 }
-
-
-
-/* @media screen and (min-width: 769px) {
-div#header img {
-    width:  60%; 
-    margin: auto; 
-} */
 
 .home {
     background-color: #434157;
@@ -216,15 +196,44 @@ div#header img {
     border-bottom-right-radius: 15px;
 }
 
+@media screen and (max-width: 479px) {
 .home:active, .home:hover,
 .about:active, .about:hover,
 .work:active, .work:hover,
 .connect:active, .connect:hover  {
-    padding-top: 115px; /***DOES THIS WORK IN ALL BROWSERS?*/
+    border-radius: 65px;
+}
 }
 
 
+@media screen and (min-width: 480px) {
+.home:active, .home:hover,
+.about:active, .about:hover,
+.work:active, .work:hover,
+.connect:active, .connect:hover  {
+    padding-top: 90px; /***DOES THIS WORK IN ALL BROWSERS?*/
+    
+}
+}
 
+@media screen and (min-width: 640px) {
+.home:active, .home:hover,
+.about:active, .about:hover,
+.work:active, .work:hover,
+.connect:active, .connect:hover  {
+    padding-top: 95px; /***DOES THIS WORK IN ALL BROWSERS?*/
+    
+}
+}
+
+@media screen and (min-width: 800px) {
+.home:active, .home:hover,
+.about:active, .about:hover,
+.work:active, .work:hover,
+.connect:active, .connect:hover  {
+    padding-top: 100px; /***DOES THIS WORK IN ALL BROWSERS?*/
+}
+}
 
 /********************HOME PAGE*************/
 div#big-blurb-home {
