@@ -62,10 +62,6 @@ div#header {
     margin-top: .3em;
 }
 
-/* div#header img {
-    width:  33%;  457/1366= .334    
-}*/
-
 @media screen and (max-width: 768px) {
 div#header img {
     width:  85%; 
@@ -76,20 +72,15 @@ div#header img {
 @media screen and (min-width: 769px) {
 div#header img {
     width:  38%;  /*      /1366=   */
-    margin: auto; 
+    margin:  auto; 
 }
 }
-
-/*@media screen and (max-width: 865px) {
-ul#navigation {
-    clear: both;
-}
-}*/
 
 ul#navigation {
     display: inline;
     float: left;
-    margin: auto;
+    margin: auto 13%;
+    margin-bottom: 1em;
 }
 
 @media screen and (min-width: 600px) {
@@ -102,7 +93,6 @@ ul#navigation {
 @media screen and (min-width: 863px) {
 ul#navigation {
     display: inline;
-   /* float: right; */
     margin: auto;
 }
 }
@@ -270,6 +260,7 @@ p.blurb {
 
 /******* Non-Index/Home Pages */
 /*Introductory Large text */
+
 div#wrapper {
     width: 82%; /*  1115/1366= .816 */
     margin: 0 auto;
@@ -277,15 +268,45 @@ div#wrapper {
     /*background: yellow;*/
 }
 
+@media screen and (min-width: 300px) {
+div#wrapper {
+    width: 82%; /*  1115/1366= .816 */
+    margin: 0 auto;
+    clear: both;
+    /*background: yellow;*/
+}
+}
 div#big-blurb {
-    position: absolute; 
+    /*position: absolute;  */
      width: 30%;
-  float: left; 
+    float: left; 
     z-index: 10;
   /* margin-right: 400px; */
   /*padding: 20px 400px 0px 80px; */
 }
 
+@media screen and (min-width: 480px) {
+div#big-blurb {
+    position: absolute; 
+     width: 30%;
+    float: left; 
+    z-index: 10;
+  /* margin-right: 400px; */
+  /*padding: 20px 400px 0px 80px; */
+}
+}
+
+div#big-blurb {
+font-size: 2em;  
+font-family: "Montserrat", "Myriad Pro", Arial, serif;
+color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
+font-weight: 700;
+  /*margin-left:  12.69%;      164 / 1292= .1269    */
+margin-bottom:  5.25%;      /*   42 / 1292 = .0325   */
+/* margin-top:  4.2%;     / 1292 =  .0727  */
+}
+
+@media screen and (min-width: 400px) {
 div#big-blurb {
 font-size: 9em;  
 font-family: "Montserrat", "Myriad Pro", Arial, serif;
@@ -295,6 +316,8 @@ font-weight: 700;
 margin-bottom:  3.25%;      /*   42 / 1292 = .0325   */
 /* margin-top:  4.2%;     / 1292 =  .0727  */
 }
+}
+
 
 div#big-blurb-home {
   display: block;
@@ -435,7 +458,48 @@ div#print-digital h2{
 }
 
 /***********Styles Specific To About, Work Pages */
-@media screen (min-width:1275px)   {
+
+div#about, div#work {
+    display: block;
+    margin-left: 1%;  /* 501/1366= .3667*/
+    margin-top: 15%;
+    background: rgb (197, 214, 215);
+    background: rgba(197, 214, 215, 0.2);
+    border-radius: 15px;
+    /* border-left: 30px solid #C5D6D7; */
+    padding: .9em;
+}
+
+@media screen and (min-width: 640px) {
+div#about, div#work {
+    display: block;
+    margin-left: 5%;  /* 501/1366= .3667*/
+    margin-top: 5%;
+    background: rgb (197, 214, 215);
+    background: rgba(197, 214, 215, 0.2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 30px solid #C5D6D7;
+    padding: 2em;
+}
+}
+
+
+@media screen and (min-width: 863px) {
+div#about, div#work {
+    display: block;
+    margin-left: 24%;  /* 501/1366= .3667*/
+    margin-top: 5%;
+    background: rgb (197, 214, 215);
+    background: rgba(197, 214, 215, 0.2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 30px solid #C5D6D7;
+    padding: 2em;
+}
+}
+
+@media screen and (min-width: 1024px) {
 div#about, div#work {
     display: block;
     margin-left: 36%;  /* 501/1366= .3667*/
@@ -446,6 +510,7 @@ div#about, div#work {
     border-bottom-right-radius: 15px;
     border-left: 30px solid #C5D6D7;
     padding: 2em;
+}
 }
 
 div#about p, div#work ul, div#work p {
