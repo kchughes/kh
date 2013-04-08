@@ -267,7 +267,7 @@ ul img {
 
 
 /********************HOME PAGE*************/
-div#big-blurb-home {
+div#big-blurb-home h1{
    display: block;
     width: 100%;
     float: left;
@@ -338,7 +338,7 @@ div#big-blurb {
   /*padding: 20px 400px 0px 80px; */
 }
 
-div#big-blurb-home p{
+div#big-blurb-home h1{
   padding-top: 1em;
     display: block;
   float: left;
@@ -374,7 +374,7 @@ div#big-blurb {
 /*}
 } */
 
-div#big-blurb p, div#big-blurb-home p {
+div#big-blurb h1, div#big-blurb-home h1 {
 font-size: 2em;  
 font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
 color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
@@ -383,7 +383,7 @@ font-weight: 700;
 }
 
 @media screen and (min-width: 480px) {
-div#big-blurb p, div#big-blurb-home p {
+div#big-blurb h1, div#big-blurb-home h1 {
 font-size: 2.7em;  
 font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
 color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
@@ -393,7 +393,7 @@ font-weight: 700;
 }
 
 @media screen and (min-width: 640px) {
-div#big-blurb p, div#big-blurb-home p{
+div#big-blurb h1, div#big-blurb-home h1{
 font-size: 4em;  
 font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
 color: /*#7E92A9*/ rgba(197, 214, 215, 0.6);
