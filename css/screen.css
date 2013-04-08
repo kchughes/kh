@@ -208,18 +208,19 @@ ul img {
 ul img:hover {
     opacity: 9;
 }
-.wide {
-   width: 40%;
+.wide img{
+   width: 45%;
 }
- .opi {
-    width: 200px;
+ .opi img{
+    width: 92%;
 }
-.invite {
-    width: 30%;
-    min-width: 200px;
+.invite img{
+    width: 35%;
+    max-width: 250px;
 }
-.tall {
-    max-width: 200px;
+.tall img{
+    height: 30%;
+    max-height: 300px;
 }
 
 #print-gallery img, #digital-gallery img {
@@ -246,12 +247,28 @@ div#home-about p{
     line-height: 1.6em;
     color: #484754;
 }
+
+div#home-about a {
+    color: #BEC1E3;
+}
+
+div#short-print, div#short-digital {
+display: block;
+position: relative;
+float: left;
+width: 100%;
+padding-bottom:   4%; 
+}
+@media screen and (min-width: 768px) {
 div#short-print, div#short-digital {
 display: inline;
 float: left;
 width: 50%;
 padding-bottom:   4%; 
 }
+}
+
+
 div#short-print h2, div#short-digital h2 {
 text-align: left;
 font-size: 2.5em;
