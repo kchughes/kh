@@ -1,5 +1,55 @@
 /* print.css Print Styles */
 
+
+html {
+  margin: 15pt 20pt;
+}
+div#header img {
+    width:  300px; 
+    margin: auto;
+}
+
+p {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 14pt;
+}
+
+div#big-blurb, div#big-blurb-home {
+  font-family: "Monserrat", Arial, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 2em 1em;
+}
+
+div#footer img {
+    width: 50px;
+    margin: 30pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Base Styles */
 
 /* Bold on headings, b, and strong */
@@ -38,7 +88,7 @@ ul.validators {
 
 div#content a:link:after,
 div#content a:visited:after {
-   content: " (" attr(href) ") ";
+   content: " [" attr(href) "] ";
    font-size: 90%;
    font-family: "Courier New", Courier, monospace;
 }
