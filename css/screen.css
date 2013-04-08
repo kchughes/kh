@@ -158,7 +158,7 @@ ul#navigation li a{
 .about, .work, .home, .connect {
     width: 9.8%;     /*135/ 1366= .0988 */
     padding: 100px 35px 15px 35px; 
-    margin: 0px;
+    margin: 0px 0px 10px 0px;
     border-radius: 50px;
     -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
     -moz-box-shadow: inset 6px -7px 7px -9px #000; 
@@ -211,7 +211,8 @@ ul#navigation li a{
 .about:active, .about:hover,
 .work:active, .work:hover,
 .connect:active, .connect:hover  {
-    padding-top: 95px; /***DOES THIS WORK IN ALL BROWSERS?*/
+    padding-top: 95px; 
+    margin: 0px;
     
 }
 }
@@ -221,9 +222,49 @@ ul#navigation li a{
 .about:active, .about:hover,
 .work:active, .work:hover,
 .connect:active, .connect:hover  {
-    padding-top: 100px; /***DOES THIS WORK IN ALL BROWSERS?*/
+    padding-top: 100px;
+    margin: 0px;
 }
 }
+
+
+/*div#short-print ul img{
+    width: 80%;
+    max-width: 800px;   
+} */
+.wide {
+   width: 40%;
+}
+
+ .opi {
+    width: 90%;
+    max-width: 600px;
+}
+
+.invite {
+    width: 30%;
+    min-width: 200px;
+}
+
+.tall {
+    max-width: 200px;
+}
+
+img {
+    opacity: .5;
+}
+
+img:hover {
+    opacity: 9;
+}
+
+ul img {
+    display: inline;
+    float: left; 
+    margin: 15px;
+}
+
+
 
 /********************HOME PAGE*************/
 div#big-blurb-home {
@@ -275,7 +316,7 @@ div#home-about p{
 
 div#wrapper {
     width: 82%; /*  1115/1366= .816 */
-    margin: 0em auto;
+    margin: em auto 0em auto;
     clear: both;
     /*background: yellow;*/
 }
@@ -298,7 +339,8 @@ div#big-blurb {
 }
 
 div#big-blurb-home p{
-  display: block;
+  padding-top: 1em;
+    display: block;
   float: left;
 /*margin:  .8em; */
 font-size: 1.8em;  
@@ -388,10 +430,9 @@ font-family: Impact, sans-serif;
 }
 
 div#short-print, div#short-digital {
-display: block;
-position: relative;
+display: inline;
 float: left;
-width: 100%;
+width: 50%;
 /*width: 48%;  /*  492/1292= .3808    math is too short, actual percentage is guesstimate*/
 padding-bottom:   4.14%; /* 53.5/1292 = .0414 */
 
@@ -415,10 +456,10 @@ div#short-digital  h2 {
 color:
 }
 
-div#short-print img, div#short-digital img {
+div#short-print, div#short-digital {
 position: relative;
 float: left;
-width: 90%;
+
 }
 
 div#short-print p {
@@ -763,7 +804,9 @@ color: #6B956B;
 
 #print-gallery img, #digital-gallery img {
     width: 40%;
-    max-width: 300px;
+    max-width: 400px;
+    height: 200px;
+    min-width: 220px;
     /*display: block;*/
 }
 
