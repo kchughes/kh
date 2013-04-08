@@ -11,19 +11,6 @@ blue purple: #43405D (nav-connect)
 violet: #493D55;
 */
 
-/* ids and classes
-html, #page, (#body), #topblock, #header, #nav???, .home, .about, .work, .connect
-index: home-about, content-body, sidebar, content, shortworks, connect-short, footer
-index . : home, about, work, connect, blurb, short-works
-about: 
-work: 
-print:
-digital:
-
-
-to do: html 5 ids (e.g. footer)
-*/
-
 
 /*************************ALL PAGES*********************/
 html {
@@ -200,13 +187,15 @@ ul img {
     display: inline;
     float: left; 
     margin: 15px;
-    border: 2px solid grey;
 }
 ul img {
     opacity: .5;
+    -moz-opacity: .5;
 }
 ul img:hover {
     opacity: 9;
+     -moz-opacity: 9;
+
 }
 .wide img{
    width: 45%;
@@ -223,12 +212,26 @@ ul img:hover {
     max-height: 300px;
 }
 
+#short-print img, #short-digital img {
+    border-radius: 5px;
+    border-bottom-left-radius: 20px;
+}
+#short-print img{
+    border: 1px solid  #B1C9D0;
+}
+
+#short-digital img{
+    border: 1px solid  #D4DEC3;
+}
+
 #print-gallery img, #digital-gallery img {
     width: 40%;
     max-width: 400px;
     height: 200px;
     min-width: 220px;
 }
+
+
 /********************HOME PAGE*************/
 
 div#home-about {
@@ -237,62 +240,73 @@ div#home-about {
     background: rgb (197, 214, 215);
     background: rgba(197, 214, 215, 0.2);
     border-radius: 15px;
-    border-left: 7px solid #C5D6D7;
+    border-left: 10px solid #C5D6D7;
+    border-right: 10px solid #C5D6D7;
     padding: 1em;
+    max-width: 600px;
+}
+@media screen and (min-width: 640px) {
+div#home-about {
+    border-left: 20px solid #C5D6D7;
+    border-right: 20px solid #C5D6D7;
+}
 }
 div#home-about p{
     font-family: "Lato", /*"Noto Sans", "Puritan", "Sans Source Pro", "Varela", */Arial, sans-serif;
     margin-bottom: 1.3em;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.6em;
     color: #484754;
 }
-
+@media screen and (min-width: 640px){
+div#home-about p{
+    font-size: 1.6em;
+    line-height: 2em;
+}
+}
 div#home-about a {
-    color: #BEC1E3;
+    color: #7E92A9;
 }
 
 div#short-print, div#short-digital {
-display: block;
-position: relative;
-float: left;
-width: 100%;
-padding-bottom:   4%; 
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-bottom:   4%; 
 }
 @media screen and (min-width: 768px) {
 div#short-print, div#short-digital {
-display: inline;
-float: left;
-width: 50%;
-padding-bottom:   4%; 
+    display: inline;
+    float: left;
+    width: 50%;
+    padding-bottom:   4%; 
 }
 }
-
-
 div#short-print h2, div#short-digital h2 {
-text-align: left;
-font-size: 2.5em;
-font-weight: bold;
-text-transform: uppercase;
+    text-align: left;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 div#short-print h2 a{
-color: #7698A1;
+    color: #7698A1;
 }
 div#short-digital  h2 a{
-color: #ADBC93;
+    color: #ADBC93;
 }
 
 div#short-print p {
-font-size: 1em;
-color: #617379;
+    font-size: 1em;
+    color: #617379;
 }
 
 div#short-digital p {
-font-size: 1em;
-color: #848D76;
+    font-size: 1em;
+    color: #848D76;
 }
 /**********************Big Blurb **********/
-div#big-blurb-home h1{
+div#big-blurb-home {
    display: block;
     width: 100%;
     float: left;
@@ -304,31 +318,30 @@ div#big-blurb {
 @media screen and (min-width: 1024px) {
 div#big-blurb {
     position: absolute; 
-     width: 25%;
+    width: 25%;
+}
 }
 div#big-blurb-home h1, div#big-blurb h1{
-    padding-top: 1em;
+    padding-top: .7em;
     font-family: "Montserrat", "Myriad Pro", Arial, serif;
     color: #7E92A9 /*rgba(197, 214, 215, 0.6)*/;
     font-weight: 700;
+    font-size: 1.7em;
 }
-div#big-blurb h1, div#big-blurb-home h1 {
-font-size: 2em;  
-}
-}
+
 @media screen and (min-width: 480px) {
 div#big-blurb h1, div#big-blurb-home h1 {
-font-size: 2.7em;  
+    font-size: 2.5em;  
 }
 }
 @media screen and (min-width: 640px) {
 div#big-blurb h1, div#big-blurb-home h1{
-font-size: 4em;  
+    font-size: 3em;  
 }
 }
 @media screen and (min-width: 1024px) {
 div#big-blurb h1, div#big-blurb-home h1{
-font-size: 3em;  
+    font-size: 3.5em;  
 }
 }
 
@@ -352,11 +365,11 @@ margin-left: 10px;
 color: #BEC1E3;
 }
 .digital {
-color: #ADBC93;
+    color: #ADBC93;
 }
 @media screen and (min-width: 480px) {
 .digital, .print {
-font-size: 1.1em;
+    font-size: 1.1em;
 }
 }
 div#print-digital h2{
@@ -368,7 +381,7 @@ div#print-digital h2{
     text-transform: uppercase;
 }
 .print h2 {
-color: #7698A1;
+    color: #7698A1;
 }
 .digital h2 {
     color: #ADBC93;
@@ -385,7 +398,7 @@ color: #7698A1;
 }   
 
 /********************* NON Home Pages **************/
-div#content h3 {
+div#content h3, div#resume h3 {
     color: #43405D;
     font-family: "Lato", Arial, sans-serif;
     font-size: 1.9em;
@@ -411,8 +424,8 @@ div#content ul{
     column-gap: 10px;
 }
 }
-div#content, div#home-about, 
-div#print-gallery, div#digital-gallery {
+div#content, div#print-gallery, 
+div#digital-gallery, div#resume {
     display: block;
     margin-top: 15%;
     background: rgb (197, 214, 215);
@@ -423,9 +436,8 @@ div#print-gallery, div#digital-gallery {
 }
 
 @media screen and (min-width: 640px) {
-div#content, div#content, 
-div#content, div#content, 
-div#print-gallery, div#digital-gallery {
+div#content, div#print-gallery, 
+div#digital-gallery, div#resume {
     margin-left: 5%; 
     margin-top: 5%;
     border-top-right-radius: 15px;
@@ -435,28 +447,32 @@ div#print-gallery, div#digital-gallery {
 }
 }
 @media screen and (min-width: 863px) {
-div#content, div#content, 
-div#content, div#content, 
-div#print-gallery, div#digital-gallery {
+div#content, div#print-gallery, 
+div#digital-gallery, div#resume {
     margin-left: 20%;  /* 501/1366= .3667*/
     border-left: 30px solid #C5D6D7;
 }
 }
 @media screen and (min-width: 1024px) {
-div#content, div#content, 
 div#content, div#print-gallery,
-div#digital-gallery {
+div#digital-gallery, div#resume
+div#resume {
     margin-left: 36%;  /* 501/1366= .3667*/
 }
 }
 div#content p, div#content ul, 
-div#home-about, div#print-gallery,
-div#digital-gallery {
+div#home-about p, div#print-gallery p,
+div#digital-gallery p, div#resume{
     font-family: "Lato", Arial, sans-serif;
     margin-bottom: 1.3em;
     font-size: 1em;
     line-height: 1.6em;
     color: #484754;
+}
+
+ div#resume{
+    margin-bottom: 1.2em;
+    font-size: .9em;
 }
 /***************CONTACT FORM **************/
 label { 
@@ -517,7 +533,16 @@ textarea {
     box-shadow: inset 2px 7px 7px -7px #000;
 } 
 
+/**********************RESUME**************/
 
+.function {
+font-weight: bold;
+margin-top: .5em;
+}
+h4 {
+    font-weight: bold;
+    font-size: 1em;
+}
 /**********************Footer**************/
 
 div#footer {
@@ -555,27 +580,22 @@ div#contact {
     width: 91%;
 }   
 } 
-
 div#contact h3 {
     font-size: 2.1em;
     color: #fff;
      font-weight: 700;
 }
-
 div#contact p a{
     display: inline;
     color: #fff;
 }
-
 div#contact img {
     width: 30px;
 }
-
 div#commons p {
     color: #fff;
     margin-top: 3em;
 }
-
 @media screen and (max-width: 320px) {
 div#commons p {
     color: #fff;
@@ -583,11 +603,7 @@ div#commons p {
     margin-top: 3em;
 }
 }
-
 div#commons p a {
     color: #BEC1E3;
 }
-
-
-
 

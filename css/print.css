@@ -25,31 +25,30 @@ h2 {
 a, a:visited {
   color: black;
 }
+/************IMAGES***********/
 
+#short-print, #short-digital {
+  display: block;
+  width: 100%;
+}
 ul img {
-  width: 250pt;
+  width: 100pt;
   display: inline;
   float: left;
 }
 
 ul li img {
-    margin: 30pt;
-}
-
-.invite img{
-  width: 100pt;
-  height: 80pt;
+    margin: 10pt 10pt 30pt 0pt;
 }
 
 .tall img {
   width: 40pt;
   height: 110pt;
 }
-
-.wide img{
-  width: 150pt;
+*/
+div#footer {
+clear: both;
 }
-
 div#footer img {
   width: 20pt;
 }
@@ -67,6 +66,37 @@ div#home-about p {
 div#home-about {
     margin: 12pt 30pt;
 }
+
+.function {
+font-weight: bold;
+margin-top: .5em;
+}
+div#content p, div#resume p,
+div#content li, div#resume li {
+    font-family:  Arial, sans-serif;
+    font-size:  12pt;
+    margin-bottom: 5pt;
+}
+
+div#content h3, div#resume h3,
+div#footer h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+    line-height: 25pt;
+    margin: 10pt 0pt 3pt 0pt;
+
+h4 {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+div#wrapper {
+    width: 82%; 
+    margin: 0 auto;
+}
+
+
+
 /*div#big-blurb p, div#big-blurb-home p{
   font-family: "Monserrat", Arial, sans-serif;
   font-size: 20pt;
