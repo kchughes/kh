@@ -238,7 +238,7 @@ div#home-about {
     display: block;
     margin: auto;
     background: rgb (197, 214, 215);
-    background: rgba(197, 214, 215, 0.2);
+    background: rgba(197, 214, 215, 0.8);
     border-radius: 15px;
     border-left: 10px solid #C5D6D7;
     border-right: 10px solid #C5D6D7;
