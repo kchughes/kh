@@ -249,18 +249,19 @@ div#home-about {
 div#home-about {
     border-left: 20px solid #C5D6D7;
     border-right: 20px solid #C5D6D7;
+    float: left;
 }
 }
 div#home-about p{
     font-family: "Lato", /*"Noto Sans", "Puritan", "Sans Source Pro", "Varela", */Arial, sans-serif;
     margin-bottom: 1.3em;
-    font-size: 1.3em;
-    line-height: 1.6em;
+    font-size: 1em;
+    line-height: 1.1em;
     color: #484754;
 }
 @media screen and (min-width: 640px){
 div#home-about p{
-    font-size: 1.6em;
+    font-size: 1.3em;
     line-height: 2em;
 }
 }
@@ -351,7 +352,7 @@ div#big-blurb h1, div#big-blurb-home h1{
 color: #96A3B4;
 }
 .highlight-green {
-color: #6B956B;
+color: #ABCAAB;
 }
 .highlight-purple {
     color: #BEC1E3;
@@ -469,8 +470,8 @@ div#resume {
 }
 }
 div#content p, div#content ul, 
-div#home-about p, div#print-gallery p,
-div#digital-gallery p, div#resume{
+div#print-gallery p, div#digital-gallery p, 
+div#resume{
     font-family: "Lato", Arial, sans-serif;
     margin-bottom: 1.3em;
     font-size: 1em;
