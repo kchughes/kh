@@ -3,28 +3,48 @@
 /* Base Styles */
 
 /* colors
-purple: #5B5870 (k in logo)
-
-dark teal: #3B4652
-grey blue purple: #434157 (nav-home)
+purple: #5B5870 (k in logo) 
+dark teal: #3B4652 (nav-about)
+grey blue purple: #434157 (nav-home, footer)
 blue purple: #43405D (nav-connect) 
-violet: #493D55;
+olive: 7698A1 (print)
+grey blue: #ADBC93 (digital)
+dark shade of olive: #B1C9D0 (print images border)
+dark shade of grey blue: #D4DEC3 (digital images border)
+violet: #493D55 (nav-work)
+light blue
+grey in background: #C1C0BE;
+alternate grey background: #C5D6D7
+dark purple: #484754 (main text color)
+blue: #7E92A9 (home page links, 
 */
 
-/*************************ALL PAGES*********************/
+/***********************  ALL PAGES  *********************/
 html {
     display: block;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    background: #E0DFDD;
+    background: 434157;
+    
+   
+}
+body { 
+    display: block;
+     background: #E0DFDD;
     background-image: -ms-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%); 
     background-image: -moz-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);  
     background-image: -o-linear-gradient(top, #FFFFFF 0%, #C1C0BE 100%);  
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #C1C0BE));   
 }
-body { 
-    display: block;
+
+p, ul {
+    font-family: "Lato", Arial, sans-serif;
+    margin-bottom: 1.3em;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #484754;
 }
+/***********************  Layout ALL PAGES  *******************/
 div#page {
     margin: 0em; 
 }
@@ -41,7 +61,8 @@ clear: both;
 width: 100%;  
 margin-top:  10em; 
 }
-/************Header (including Navigation) *****/
+
+/******  Header (including Navigation) **/
 div#topblock {
     width: 100%;
     padding: 10px 0px 0px 0px;
@@ -182,8 +203,6 @@ ul#navigation li a{
 }
 
 /**********Portfolio Images ***********/
-
-
 ul img {
     opacity: .5;
     -moz-opacity: .5;
@@ -231,7 +250,7 @@ ul img {
 
 div#home-about {
     display: block;
-    margin: auto;
+    margin: 2em auto;
     background: #C5D6D7; /* for browsers that don't support background opacity */
     background: rgba(197, 214, 215, 0.8);
     border-radius: 15px;
@@ -248,7 +267,7 @@ div#home-about {
 }
 }
 div#home-about p{
-    font-family: "Lato", /*"Noto Sans", "Puritan", "Sans Source Pro", "Varela", */Arial, sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     margin-bottom: 1.3em;
     font-size: 1em;
     line-height: 1.2em;
@@ -394,8 +413,7 @@ div#print-digital h2{
 }   
 
 /********************* NON Home Pages **************/
-div#content h3, div#resume h3,
-div#go-resume a{
+div#content h3, div#resume h3{
     color: #43405D;
     font-family: "Lato", Arial, sans-serif;
     font-size: 1.9em;
@@ -453,30 +471,31 @@ div#digital-gallery, div#resume {
 @media screen and (min-width: 863px) {
 div#content, div#print-gallery, 
 div#digital-gallery, div#resume {
-    margin-left: 20%;  /* 501/1366= .3667*/
+    margin-left: 20%;  
     border-left: 30px solid #C5D6D7;
 }
 }
 @media screen and (min-width: 1024px) {
 div#content, div#print-gallery,
-div#digital-gallery, div#resume
-div#resume {
-    margin-left: 38%;  /* 501/1366= .3667*/
+div#digital-gallery, div#resume {
+    margin-left: 37%;  
 }
 }
-div#content p, div#content ul, 
-div#print-gallery p, div#digital-gallery p, 
-div#resume{
-    font-family: "Lato", Arial, sans-serif;
-    margin-bottom: 1.3em;
-    font-size: 1em;
-    line-height: 1.6em;
-    color: #484754;
-}
+
+
 div#print-digital{
     clear: both;
 }
+/**********************RESUME**************/
 
+.function {
+font-weight: bold;
+margin-top: .5em;
+}
+h4 {
+    font-weight: bold;
+    font-size: 1em;
+}
  div#resume{
     margin-bottom: 1.2em;
     font-size: .9em;
@@ -505,6 +524,8 @@ input {
     border-radius: 5px;
     margin: .3em 3em 0em 0em;
 }
+
+
 @media screen and (min-width: 752px) {
     label {
     margin-top: 1.9em;
@@ -525,7 +546,7 @@ textarea {
     max-width: 375px;
     height: 150px;
     border-radius: 8px;
-    margin: .3em 2em 0em 0em;
+    margin: .8em 2em 0em 0em;
     float: left;
 }
    input[type=submit] {
@@ -540,16 +561,7 @@ textarea {
     box-shadow: inset 2px 7px 7px -7px #000;
 } 
 
-/**********************RESUME**************/
 
-.function {
-font-weight: bold;
-margin-top: .5em;
-}
-h4 {
-    font-weight: bold;
-    font-size: 1em;
-}
 /**********************Footer**************/
 
 div#footer {
