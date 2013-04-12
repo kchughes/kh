@@ -1,54 +1,65 @@
 /* print.css Print Styles, built on top of the Rapid Prototyping Kit*/
 
-/* Base Styles */
+/**************Base Styles *********************/
 
 /*  Print all text color as black, including links.   */
-* { color: black; }
+* { 
+  color: black; 
+}
 
 /* Bold on headings, b, and strong */
-h1,h2,h3,h4,h5,h6,b,strong 
-{ font-weight: bold; }
+h1,h2,h3,h4,h5,h6,b,strong { 
+  font-weight: bold; 
+}
+
+h2, h3, h4, p {
+    font-family: "Lato", Arial, sans-serif;
+}
 
 h1 {
   font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
   font-size: 14pt;
   margin-bottom: 14pt;
 }
-
 h2 {
-  font-family: "Lato", Arial, sans-serif;
   font-size: 15pt;
-  color: black;
-  margin: 35pt 0pt 10pt 0pt;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 15pt;
-  color: black;
   margin: 35pt 0pt 10pt 0pt;
   text-transform: uppercase;
 }
 
 h3 {
-  font-family: "Lato", Arial, sans-serif;
   font-size: 14pt;
-  color: black;
   margin: 15pt 0pt 7pt 0pt;
 }
 
+p {
+    font-size: 12pt;
+    line-height: 16pt;
+    margin-bottom: 16pt;
+}
+
+
+/********   Images   ******/
 div#header img {
     width:  200px; 
     margin: 20pt 0pt;
 }
-
-
-p {
-    font-family: "Lato", Arial, sans-serif;
-    font-size: 12pt;
-    line-height: 16pt;
-    margin-bottom: 16pt;
+#short-print, #short-digital {
+  display: block;
+  width: 100%;
+  clear: both;
+  padding-top: 10px;
+}
+ul img {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    float: left;
+    margin: 10pt 15pt ;
+}
+div#footer img {
+    width: 20px;
+    height: 20px;
 }
 
 /*
@@ -63,76 +74,54 @@ ul.validators {
 	display: none;
 }
 
-/******   Images *******/
-
-#short-print, #short-digital {
-  display: block;
-  width: 100%;
-  clear: both;
-  padding-top: 10px;
-}
-ul img {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    float: left;
-    margin: 10pt 15pt ;
+/*****        Layout      *******/
+html {
+    margin: auto 35pt;
 }
 
-div#footer img {
-    width: 20px;
-    height: 20px;
-}
-
+/************   Footer *********/
 div#footer {
   clear: both;
   float: left;
   margin-top:  40pt;
 }
-
 div#footer a, div#footer p {
     font-size: 90%;
 }
-
 div#commons {
     font-size: 70%;
     margin-top: 10pt;
 }
-
 ul.digital, ul.print {
     font-size: 70%;
     text-transform: uppercase;
 }
 
+/*******  Print vs Digital Styles  ********/
 ul.digital {
     margin-left: 10pt;
 }
-
 ul.print {
     margin-left: 10pt;
 }
-
 div#content ul + p  {
     margin-top: 16pt;
     font-weight: bold;
 }
-
 div#print-digital {
     margin-top: 0pt;
 }
-
 div#print-digital h2 {
     margin-top: 10pt;
 }
 
-div#content fieldset {
+/******** Page Specific ********/
+div#content fieldset {     /******hides contact form *******/
     display: none;
 }
-
-.function {
+.function {                 /**** resume  *****/
     font-weight: bold;
 }
-
 div#resume p + ul li {
     margin-top: 10pt;
 }
@@ -164,7 +153,3 @@ acronym:after {
      content: " (" attr(title) ") ";
 }
 
-/*****        Layout      *******/
-html {
-    margin: auto 35pt;
-}
