@@ -200,7 +200,7 @@ ul img {
     height: 200px;
 }
 
-@media screen and (min-width: 480px;) {
+@media screen and (min-width: 480px) {
 ul img {
      width: 250px;
     height: 250px;
@@ -232,7 +232,7 @@ ul img {
 div#home-about {
     display: block;
     margin: auto;
-    background: rgb (197, 214, 215);
+    background: #C5D6D7; /* for browsers that don't support background opacity */
     background: rgba(197, 214, 215, 0.8);
     border-radius: 15px;
     border-left: 10px solid #C5D6D7;
@@ -352,7 +352,7 @@ color: #ABCAAB;
 .highlight-purple {
     color: #BEC1E3;
 }
-.digital, .print {
+li .digital a, li .print a {
 text-transform: uppercase;
 font-size: .8em;
 margin-left: 10px;
@@ -432,7 +432,7 @@ div#content, div#print-gallery,
 div#digital-gallery, div#resume {
     display: block;
     margin-top: 15%;
-    background: rgb (197, 214, 215);
+    background: #C5D6D7; 
     background: rgba(197, 214, 215, 0.2);
     border-radius: 15px;
     border-left: 7px solid #C5D6D7;
