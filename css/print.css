@@ -1,67 +1,66 @@
-/* print.css Print Styles */
+/* print.css Print Styles, built on top of the Rapid Prototyping Kit*/
 
+/**************Base Styles *********************/
 
-html {
-  margin: 15pt 20pt;
+/*  Print all text color as black, including links.   */
+* { 
+  color: black; 
 }
-div#header img {
-    width:  300px; 
-    margin: auto;
+
+/* Bold on headings, b, and strong */
+h1,h2,h3,h4,h5,h6,b,strong { 
+  font-weight: bold; 
+}
+
+h2, h3, h4, p {
+    font-family: "Lato", Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", "Myriad Pro", Arial, sans-serif;
+  font-size: 14pt;
+  margin-bottom: 14pt;
+}
+h2 {
+  font-size: 15pt;
+  margin: 35pt 0pt 10pt 0pt;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14pt;
+  margin: 15pt 0pt 7pt 0pt;
 }
 
 p {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 13pt;
+    font-size: 12pt;
+    line-height: 16pt;
+    margin-bottom: 16pt;
 }
 
-div#big-blurb, div#big-blurb-home {
-  font-family: "Monserrat", Arial, sans-serif;
-  font-size: 18pt;
-  font-weight: bold;
-  margin: 2em 1em;
-}
 
+/********   Images   ******/
+div#header img {
+    width:  200px; 
+    margin: 20pt 0pt;
+}
+#short-print, #short-digital {
+  display: block;
+  width: 100%;
+  clear: both;
+  padding-top: 10px;
+}
+ul img {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    float: left;
+    margin: 10pt 15pt ;
+}
 div#footer img {
-    width: 50px;
-    margin: 30pt;
+    width: 20px;
+    height: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Base Styles */
-
-/* Bold on headings, b, and strong */
-h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
-/* Italic on i, em, and cite: */
-i,em,cite { font-style: italic; }
-
-/*
-  Print all text color as black, including links.
-*/
-
-* { color: black; }
 
 /*
   Hide the accessibility navigation, the site navigation,
@@ -75,7 +74,57 @@ ul.validators {
 	display: none;
 }
 
+/*****        Layout      *******/
+html {
+    margin: auto 35pt;
+}
 
+/************   Footer *********/
+div#footer {
+  clear: both;
+  float: left;
+  margin-top:  40pt;
+}
+div#footer a, div#footer p {
+    font-size: 90%;
+}
+div#commons {
+    font-size: 70%;
+    margin-top: 10pt;
+}
+ul.digital, ul.print {
+    font-size: 70%;
+    text-transform: uppercase;
+}
+
+/*******  Print vs Digital Styles  ********/
+ul.digital {
+    margin-left: 10pt;
+}
+ul.print {
+    margin-left: 10pt;
+}
+div#content ul + p  {
+    margin-top: 16pt;
+    font-weight: bold;
+}
+div#print-digital {
+    margin-top: 0pt;
+}
+div#print-digital h2 {
+    margin-top: 10pt;
+}
+
+/******** Page Specific ********/
+div#content fieldset {     /******hides contact form *******/
+    display: none;
+}
+.function {                 /**** resume  *****/
+    font-weight: bold;
+}
+div#resume p + ul li {
+    margin-top: 10pt;
+}
 /*
   Automatically print the URLs from hyperlinks in the
   content area of a page, and put them in a monospace font,
@@ -89,7 +138,7 @@ ul.validators {
 div#content a:link:after,
 div#content a:visited:after {
    content: " [" attr(href) "] ";
-  /* font-size: 90%; */
+   font-size: 85%;
    font-family: "Courier New", Courier, monospace;
 }
 
@@ -103,3 +152,4 @@ abbr:after,
 acronym:after {
      content: " (" attr(title) ") ";
 }
+
