@@ -8,7 +8,7 @@
 	// Default settings object.
 	// See http://jacklmoore.com/colorbox for details.
 	defaults = {
-		transition: "elastic",
+		transition: "fade",
 		speed: 300,
 		fadeOut: 300,
 		width: false,
@@ -29,7 +29,7 @@
 		href: false,
 		title: false,
 		rel: false,
-		opacity: 0.9,
+		opacity: 0.85,
 		preloading: true,
 		className: false,
 
@@ -39,10 +39,10 @@
 		retinaSuffix: '@2x.$1',
 
 		// internationalization
-		current: "image {current} of {total}",
+		//current: "image {current} of {total}",
 		previous: "previous",
 		next: "next",
-		close: "close",
+		close: "exit",
 		xhrError: "This content failed to load.",
 		imgError: "This image failed to load.",
 
