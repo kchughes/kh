@@ -13,6 +13,11 @@
 	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
  	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/colorbox.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/jquery/colorbox/jquery.colorbox.js"></script>
+
 </head>
 
 
@@ -45,15 +50,24 @@
 
 	    <div id="print-gallery">
           <ul> 
-            <li><img src="media/img/portfolio-snapshots/tn-2008wbinvite.png"   alt="Winter Brunch Invitation"/></li>
-            <li> <img src="media/img/portfolio-snapshots/tn-2009wbinvite.png"   alt="Winter Brunch Invitation"/></li>
-            <li> <img src="media/img/portfolio-snapshots/tn-reportingmanual.jpg"    alt="Time Effort Reporting Manual"/></li>
-            <li><img src="media/img/portfolio-snapshots/tn-2010wbinvite.png"  alt="Winter Brunch Invitation"/></li>
-            <li><img src="media/img/portfolio-snapshots/tn-globaliqposter-sa1.jpg"   alt="Global IQ Poster"/></li>
-            <li><img src="media/img/portfolio-snapshots/tn-globaliqposter-e3.jpg"    alt="Global IQ Poster"/></li>
-            <li><img src="media/img/portfolio-snapshots/tn-bannerwelcome.jpg"      alt="Welcome Banner"/></li>
-            <li> <img src="media/img/portfolio-snapshots/tn-opibrochure-interior.jpg" alt="OPI Brochure Interior"/></li>
-            <li> <img src="media/img/portfolio-snapshots/tn-opibrochure-exterior.jpg"   alt="OPI Brochure Exterior"/></li>   
+            <li> <a class="gallery" href="media/img/portfolio-snapshots/2008wbinvite.png"   title="2008 Winter Brunch Invitation">
+                  <img src="media/img/portfolio-snapshots/tn-2008wbinvite.png"   alt="Winter Brunch Invitation"/> </a></li>
+            <li><a class="gallery" href="media/img/portfolio-snapshots/2009wbinvite.png"   title="2009 Winter Brunch Invitation"/>
+                 <img src="media/img/portfolio-snapshots/tn-2009wbinvite.png"   alt="Winter Brunch Invitation"/></a></li>
+            <li><a class="gallery" href="media/img/portfolio-snapshots/reportingmanual.jpg"    title="Time Effort Reporting Manual">
+                <img src="media/img/portfolio-snapshots/tn-reportingmanual.jpg"    alt="Time Effort Reporting Manual"/></a></li>
+            <li><a class="gallery" href="media/img/portfolio-snapshots/2010wbinvite.png"  title="2010 Winter Brunch Invitation">
+                <img src="media/img/portfolio-snapshots/tn-2010wbinvite.png"  alt="Winter Brunch Invitation"/></a></li>
+            <li><a class="gallery" href="media/img/portfolio-snapshots/globaliqposter-sa1.jpg"   title="Global IQ Poster">
+                <img src="media/img/portfolio-snapshots/tn-globaliqposter-sa1.jpg"   alt="Global IQ Poster"/></a></li>
+            <li><a class="gallery" href="media/img/portfolio-snapshots/globaliqposter-e3.jpg"    title="Global IQ Poster">
+                <img src="media/img/portfolio-snapshots/tn-globaliqposter-e3.jpg"    alt="Global IQ Poster"/></a></li>
+            <li><a class="gallery" href="media/img/portfolio-snapshots/bannerwelcome.jpg"  title="Welcome Banner">
+                <img src="media/img/portfolio-snapshots/tn-bannerwelcome.jpg"      alt="Welcome Banner"/></a></li>
+            <li> <a class="gallery" href="media/img/portfolio-snapshots/opi-brochure-interior.jpg" title="OPI Brochure Interior">
+                <img src="media/img/portfolio-snapshots/tn-opibrochure-interior.jpg" alt="OPI Brochure Interior"/></a></li>
+            <li> <a class="gallery" href="media/img/portfolio-snapshots/opibrochure-exterior.jpg"   title="OPI Brochure Exterior">
+                <img src="media/img/portfolio-snapshots/tn-opibrochure-exterior.jpg"   alt="OPI Brochure Exterior"/></a></li>   
          </ul>
  
       <div id="print-digital">
@@ -79,7 +93,9 @@
 
 
 </div> 			<!--end page-->
-
+<script>
+	jQuery('a.gallery').colorbox();
+</script>
 </body>
 
 </html>
