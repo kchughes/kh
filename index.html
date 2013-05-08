@@ -13,6 +13,10 @@
 	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
  	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/colorbox.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/jquery/colorbox/jquery.colorbox.js"></script>
 </head>
 
 
@@ -52,19 +56,33 @@
 	
 		<div id="short-print">
     			<h2><a href="print.html">Print</a></h2>
-		  	<ul> 
-				<li> <img src="media/img/portfolio-snapshots/tn-opibrochure-interior.jpg" alt="OPI Brochure Interior" /> </li>
-   				<li> <img src="media/img/portfolio-snapshots/tn-2009wbinvite.png"   alt="Winter Brunch Invitation"/> </li>
-   				<li> <img src="media/img/portfolio-snapshots/tn-reportingmanual.jpg"    alt="Time Effort Reporting Manual"/></li>
+	
+			<ul> 
+				<li> <a class="gallery" href="media/img/portfolio-snapshots/opi-brochure-interior.jpg" title="OPI Brochure- Interior">
+						<img src="media/img/portfolio-snapshots/tn-opibrochure-interior.jpg" alt="OPI Brochure Interior" />
+						<span class="caption">OPI Brochure- Interior</span> </a> </li>   				
+				<li> <a class="gallery" href="media/img/portfolio-snapshots/tn-2009wbinvite.png" title= "Winter Brunch Invitation">
+						<img src="media/img/portfolio-snapshots/tn-2009wbinvite.png"   alt="Winter Brunch Invitation" /> 
+						<span class="caption">Winter Brunch Invitation</span> </a> </li>
+   				<li> <a class="gallery" href="media/img/portfolio-snapshots/reportingmanual.jpg"    title="Time Effort Reporting Manual">
+						<img src="media/img/portfolio-snapshots/tn-reportingmanual.jpg"    alt="Time Effort Reporting Manual" />
+					<span class="caption">Time Effort Reporting Manual</span> </a> </li>
 			</ul>
+
 		</div> <!--end short-print-->
 
 		<div id="short-digital">
       			<h2><a href="digital.html">Digital</a></h2>
 	    		<ul>
-        			<li> <img src="media/img/portfolio-snapshots/tn-2011holidaycard.png"  alt="Holiday Card" /> </li>
-	 			<li><img src="media/img/portfolio-snapshots/tn-june242012ward44.jpg"   alt="June 24, 2012 ward 44 crime" /> </li>
-				<li><img src="media/img/portfolio-snapshots/tn-2012holidaycard.jpg"    alt="Holiday Card" class="wide-img"/> </li>
+        			<li> <a class="gallery" href="media/img/portfolio-snapshots/2011holidaycard.png"  title="Holiday Card"> 
+					<img src="media/img/portfolio-snapshots/tn-2011holidaycard.png"  alt="Holiday Card" />
+					<span class="caption">Holiday Card</span> </a></li>
+	 			<li> <a class="gallery" href="media/img/portfolio-snapshots/june242012ward44.jpg"   title="June 24, 2012 Project">
+					<img src="media/img/portfolio-snapshots/tn-june242012ward44.jpg"   alt="June 24, 2012" />
+					<span class="caption">June 24, 2012 Project</span> </a> </li>
+				<li> <a class="gallery" href="media/img/portfolio-snapshots/2012holidaycard.jpg"    title="Holiday Card">
+					<img src="media/img/portfolio-snapshots/tn-2012holidaycard.jpg"    alt="Holiday Card" />
+					<span class="caption">Holiday Card</span></a>  </li>
 			</ul>
   		</div> 		<!--end short-digital-->
 	</div> 		<!--end content-body-->
@@ -83,7 +101,9 @@
 		</div> 	<!--- end contact-->
 	</div> 		<!--end footer-->
 </div> 	<!--end page-->
-
+<script>
+	jQuery('a.gallery').colorbox();
+</script>
 </body>
 
 </html>

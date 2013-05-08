@@ -13,6 +13,12 @@
 	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
  	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/colorbox.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/jquery/colorbox/jquery.colorbox.js"></script>
+
+
 </head>
 
 <body>
@@ -45,12 +51,24 @@
 
 	        <div id="digital-gallery">
               <ul>
-               <li><img src="media/img/portfolio-snapshots/tn-2010holidaycard.jpg"  alt="Holiday Card" /> </li>
-                <li><img src="media/img/portfolio-snapshots/tn-2009holidaypartyinvite.png"   alt="Holiday Party Invitation" /> </li>
-                <li> <img src="media/img/portfolio-snapshots/tn-2011holidaycard.png"  alt="Holiday Card" /></li>
-                <li> <img src="media/img/portfolio-snapshots/tn-2012holidaycard.jpg"    alt="Holiday Card" /> </li>
-                <li><img src="media/img/portfolio-snapshots/tn-celebrating25yrs.jpg"   alt="Celebrating 25 years logo" /> </li>
-                <li><img src="media/img/portfolio-snapshots/tn-june242012ward44.jpg"   alt="June 24, 2012 ward 44 crime" /> </li>
+               <li><a class="gallery digital-group" href="media/img/portfolio-snapshots/2010holidaycard.jpg"  title="Holiday Card" >
+                    <img src="media/img/portfolio-snapshots/tn-2010holidaycard.jpg"  alt="Holiday Card" />
+                     <span class="caption">Holiday Card</span></a> </li>
+                <li><a class="gallery digital-group" href="media/img/portfolio-snapshots/2009holidaypartyinvite.png"   title="Holiday Party Invitation" >
+                    <img src="media/img/portfolio-snapshots/tn-2009holidaypartyinvite.png"   alt="Holiday Party Invitation" />
+                     <span class="caption">Holiday Party Invitation</span> </a></li>
+                <li> <a class="gallery digital-group" href= "media/img/portfolio-snapshots/2011holidaycard.jpg"  title="Holiday Card" >
+                    <img src="media/img/portfolio-snapshots/tn-2011holidaycard.png"  alt="Holiday Card" />
+                     <span class="caption">Holiday Card</span></a></li>
+                <li> <a class="gallery digital-group" href= "media/img/portfolio-snapshots/2012holidaycard.jpg"    title="Holiday Card" > 
+                    <img src="media/img/portfolio-snapshots/tn-2012holidaycard.jpg"    alt="Holiday Card" />
+                     <span class="caption">Holiday Card</span></a> </li>
+                <li><a class="gallery digital-group" href= "media/img/portfolio-snapshots/celebrating25yrs.jpg"   title="Celebrating 25 years logo">
+                    <img src="media/img/portfolio-snapshots/tn-celebrating25yrs.jpg"   alt="Celebrating 25 years logo" />
+                     <span class="caption">Celebrating 25 years logo</span> </a></li>
+                <li><a class="gallery digital-group" href="media/img/portfolio-snapshots/june242012ward44.jpg"   title="June 24, 2012 Project">
+                    <img src="media/img/portfolio-snapshots/tn-june242012ward44.jpg"   alt="June 24, 2012 ward 44 crime" />
+                     <span class="caption">June 24, 2012 Project</span></a> </li>
               </ul>
                 
           <div id="print-digital">
@@ -74,6 +92,12 @@
 	</div> 		<!--end footer-->
 
 </div> 	<!--end page-->
+<script>
+	jQuery('a.gallery').colorbox();
+    $(".digital-group").colorbox({rel:"digital-group"});
+</script>
+
+
 </body>
 
 </html>

@@ -212,7 +212,7 @@ ul img:hover {
 ul img {
     display: inline;
     float: left; 
-    margin: 15px;
+    margin: 15px 20px 5px 15px;
     width: 200px;
     height: 200px;
 }
@@ -242,6 +242,17 @@ ul img {
     height: 200px;
     min-width: 220px;
 }
+
+a.gallery {
+    display: inline-block;
+}
+.caption {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: .8em;
+    display: block;
+    color: #53525F;
+    text-align: center;
+}   
 
 
 /********************HOME PAGE*************/
