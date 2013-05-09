@@ -245,6 +245,7 @@ ul img {
 
 a.gallery {
     display: inline-block;
+    width: 250px;
 }
 .caption {
     font-family: "Lato", Arial, sans-serif;
